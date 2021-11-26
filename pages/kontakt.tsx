@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import { Head } from '@/components/Head'
 
-const Home: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <>
       <Head title="Solidgate" content=""/>
+      <span>Kontakt</span>
     </>
   )
 }
 
-export default Home
+export default Contact

@@ -1,5 +1,11 @@
+export const clientPaths = {
+  home: "/",
+  kontakt: "/kontakt",
+  galeria: "/galeria",
+}
+
 export const paths = {
-    home: "/",
+  ...clientPaths,
     api: {
       items: "/api/items",
     },
