@@ -2,6 +2,10 @@
   --brand-color-main: #48a36f;
   --brand-color-lighter: #{lighten(#5ab783, 20%)};
   --brand-color-secondary: #e12899;
+  --white: #ffffff;
+  --gray-shadow: #cccccc;
+  --black: #000000;
+  --black-lighter: #{lighten(#000000, 20%)};
 }
 
 html,

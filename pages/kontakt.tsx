@@ -1,18 +1,12 @@
 import type { GetStaticProps, NextPage } from "next";
-import { Head } from "@/components/Head";
-import { Banner } from "@/components/Banner";
 import kontaktBanner from "../public/kontakt-banner.jpg";
+import { Layout } from "@/components/Layout";
 
 const Contact: NextPage = () => {
   return (
-    <>
-      <Head
-        title="Solidgate - Kontakt"
-        content="Jak można się z nami skontaktować"
-      />
-      <Banner src={kontaktBanner} />
+    <Layout title="Kontakt" banner={kontaktBanner}>
       <span>Kontakt</span>
-    </>
+    </Layout>
   );
 };
 

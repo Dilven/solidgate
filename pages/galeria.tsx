@@ -1,18 +1,13 @@
 import type { GetStaticProps, NextPage } from "next";
-import { Head } from "@/components/Head";
 import galeriaBanner from "../public/galeria-banner.jpg";
-import { Banner } from "@/components/Banner";
+import React from "react";
+import { Layout } from "@/components/Layout";
 
 const Gallery: NextPage = () => {
   return (
-    <>
-      <Head
-        title="Solidgate - Galeria"
-        content="Galeria wykonanych prac - furtki, bramy, ogrodzenia, balustrady"
-      />
-      <Banner src={galeriaBanner} />
+    <Layout title="Galeria" banner={galeriaBanner}>
       <span>Galeria</span>
-    </>
+    </Layout>
   );
 };
 

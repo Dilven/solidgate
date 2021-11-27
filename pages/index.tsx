@@ -1,18 +1,13 @@
 import type { GetStaticProps, NextPage } from "next";
-import { Head } from "@/components/Head";
 import mainBanner from "../public/main-banner.jpg";
-import { Banner } from "@/components/Banner";
+import React from "react";
+import { Layout } from "@/components/Layout";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Head
-        title="Solidgate - Strona główna"
-        content="firma zajmująca się ogrodzeniami od lat"
-      />
-      <Banner src={mainBanner} />
+    <Layout title="Strona główna" banner={mainBanner}>
       <span>Home</span>
-    </>
+    </Layout>
   );
 };
 
