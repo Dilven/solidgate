@@ -1,11 +1,11 @@
-export const clientPaths = {
-  home: "/",
-  kontakt: "/kontakt",
+export const navigationPaths = {
   galeria: "/galeria",
+  kontakt: "/kontakt",
 };
 
 export const paths = {
-  ...clientPaths,
+  ...navigationPaths,
+  home: "/",
   api: {
     items: "/api/items",
   },

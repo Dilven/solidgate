@@ -1,9 +1,9 @@
 import { NextSeo } from "next-seo";
 import React, { ReactNode } from "react";
-import { Banner } from "../Banner/Banner";
 import { CookiesPopup } from "../CookiesPopup/CookiesPopup";
 import { Footer } from "../Footer/Footer";
-import { Navbar } from "../Navbar/Navbar";
+import { Header } from "../Header/Header";
+import styles from './Layout.module.scss';
 
 interface Props {
   readonly children: ReactNode;
@@ -14,14 +14,13 @@ interface Props {
 
 export const Layout = ({ children, title, titleTemplate, banner }: Props) => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <NextSeo
         title={titleTemplate ? titleTemplate.replace('%s', title) : title}
         openGraph={{ title: titleTemplate ? titleTemplate.replace('%s', title) : title }}
       />
-      <Navbar />
-      <Banner src={banner} />
-      <main>{children}</main>
+      <Header banner={banner} />
+      <main className={styles.main}>{children}</main>
       <Footer />
       <CookiesPopup />
     </div>

@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
-import galeriaBanner from "../public/galeria-banner.jpg";
+import galeriaBanner from "../../public/galeria-banner.jpg";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 
