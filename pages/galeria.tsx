@@ -6,7 +6,7 @@ import { Banner } from "@/components/Banner";
 const Gallery: NextPage = () => {
   return (
     <>
-      <Head title="Solidgate" content="" />
+      <Head title="Solidgate" content="Galeria wykonanych prac - furtki, bramy, ogrodzenia, balustrady" />
       <Banner src={galeriaBanner} />
       <span>Galeria</span>
     </>

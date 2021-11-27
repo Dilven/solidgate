@@ -6,7 +6,7 @@ import { Banner } from "@/components/Banner";
 const Home: NextPage = () => {
   return (
     <>
-      <Head title="Solidgate" content="" />
+      <Head title="Solidgate" content="firma zajmująca się ogrodzeniami od lat" />
       <Banner src={mainBanner} />
       <span>Home</span>
     </>
