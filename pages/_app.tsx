@@ -7,14 +7,9 @@ import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import { getConfig } from "@/config/config";
 import { useRouter } from "next/dist/client/router";
+import { meta } from "@/helpers/metadata";
 
 const queryClient = new QueryClient({ defaultOptions });
-
-const meta = {
-  title: "Solidgate",
-  description: `Solidgate to firma zajmująca się wykonywanie ogrodzeń, bram, furtek, balustrad schodowych i innych elementów kutych!`,
-};
-export const titleTemplate = `%s | ${meta.title}`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { asPath } = useRouter();
