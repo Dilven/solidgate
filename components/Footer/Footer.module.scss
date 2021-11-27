@@ -3,9 +3,6 @@
   color: var(--white);
   border-top: 3px solid var(--brand-color-main);
   padding: 2rem 2rem 2rem 2rem;
-
-  padding-bottom: calc(2.5rem + constant(safe-area-inset-bottom));
-  padding-bottom: calc(2.5rem + env(safe-area-inset-bottom));
 }
 
 .content {
