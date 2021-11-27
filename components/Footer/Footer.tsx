@@ -1,6 +1,6 @@
-import { navigationPaths } from '@/config/paths';
-import { NavLink } from '../Navlink/Navlink';
-import styles from './Footer.module.scss';
+import { navigationPaths } from "@/config/paths";
+import { NavLink } from "../Navlink/Navlink";
+import styles from "./Footer.module.scss";
 
 export const Footer = () => {
   return (
@@ -14,16 +14,16 @@ export const Footer = () => {
           <span>98-335 Pątnów</span>
         </div>
         <div className={styles.contact}>
-        <ul className={styles.list}>
-          {Object.entries(navigationPaths).map(([name, path]) => (
-            <NavLink key={name} path={path}>
-              {name}
-            </NavLink>
-          ))}
-        </ul>
+          <ul className={styles.list}>
+            {Object.entries(navigationPaths).map(([name, path]) => (
+              <NavLink key={name} path={path}>
+                {name}
+              </NavLink>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
   );
 };
-Footer.displayName = 'Footer';
+Footer.displayName = "Footer";

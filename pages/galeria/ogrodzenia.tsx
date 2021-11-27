@@ -4,12 +4,12 @@ import { Layout } from "@/components/Layout/Layout";
 import galeriaBalustradyImg from "../../public/galeria-balustrady-banner.jpg";
 import { pageTitles } from "@/helpers/metadata";
 
-
 const Gallery: NextPage = () => {
   return (
-    <Layout title={pageTitles.ogrodzenia} banner={galeriaBalustradyImg}>
-     
-    </Layout>
+    <Layout
+      title={pageTitles.ogrodzenia}
+      banner={galeriaBalustradyImg}
+    ></Layout>
   );
 };
 

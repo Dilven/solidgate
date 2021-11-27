@@ -1,8 +1,11 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState } from "react";
 
-import { useDidMount } from './useDidMount';
+import { useDidMount } from "./useDidMount";
 
-export function useLocalStorage<T extends string>(key: string, defaultValue: T) {
+export function useLocalStorage<T extends string>(
+  key: string,
+  defaultValue: T
+) {
   const [value, setValue] = useState<T | null>(null);
 
   useDidMount(() => {
@@ -23,7 +26,7 @@ export function useLocalStorage<T extends string>(key: string, defaultValue: T) 
         console.error(err);
       }
     },
-    [key],
+    [key]
   );
 
   return [value, setStoredValue] as const;

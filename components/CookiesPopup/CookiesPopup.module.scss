@@ -1,46 +1,46 @@
 .popup {
-    position: fixed;
-    bottom: 10rem;
-    left: 0;
-    padding: 2rem;
-    text-align: center;
-    background-color: var(--brand-color-main);
-    box-shadow: 0 0 8px 2px var(--gray-shadow);
-    right: 2rem;
+  position: fixed;
+  bottom: 10rem;
+  left: 0;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--brand-color-main);
+  box-shadow: 0 0 8px 2px var(--gray-shadow);
+  right: 2rem;
+  left: 2rem;
+  border-radius: 5px;
+
+  @media screen and (min-width: 45em) {
+    bottom: 2rem;
     left: 2rem;
-    border-radius: 5px;
-  
-    @media screen and (min-width: 45em) {
-      bottom: 2rem;
-      left: 2rem;
-      max-width: 20rem;
-    }
+    max-width: 20rem;
   }
-  
-  .popupText {
-    color: var(--text-distinctive);
-    margin-top: 0;
+}
+
+.popupText {
+  color: var(--text-distinctive);
+  margin-top: 0;
+}
+
+.acceptButton {
+  margin-top: 5px;
+  appearance: none;
+  padding: 1.2rem 1.2rem;
+  border: 0.5px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: var(--brand-color-secondary);
+  background-color: var(--black);
+  color: var(--brand-color-secondary);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--black-lighter);
   }
-  
-  .acceptButton {
-    margin-top: 5px;
-    appearance: none;
-    padding: 1.2rem 1.2rem;
-    border: 0.5px;
-    border-style: solid;
-    border-radius: 10px;
-    border-color: var(--brand-color-secondary);
-    background-color: var(--black);
-    color: var(--brand-color-secondary);
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  
-    &:hover {
-      background-color: var(--black-lighter);
-    }
-  
-    &:focus {
-      outline: 2px dashed var(--brand-color-lighter);
-    }
+
+  &:focus {
+    outline: 2px dashed var(--brand-color-lighter);
   }
+}

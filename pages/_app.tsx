@@ -15,7 +15,7 @@ const queryClient = new QueryClient({ defaultOptions });
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { asPath } = useRouter();
-  const { isMaintanceMode } = useMaintance()
+  const { isMaintanceMode } = useMaintance();
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, user-scalable=yes, initial-scale=1.0, viewport-fit=cover"
         />
       </Head>
-      {isMaintanceMode ?  <Component {...pageProps} /> : <Maintance />}
+      {isMaintanceMode ? <Maintance /> : <Component {...pageProps} /> }
     </QueryClientProvider>
   );
 }

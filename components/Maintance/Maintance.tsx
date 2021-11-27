@@ -1,7 +1,3 @@
 export const Maintance = () => {
-    return (
-        <div>
-            Maintance mode
-        </div>
-    )
-}
+  return <div>Maintance mode</div>;
+};
