@@ -7,6 +7,7 @@ import { Layout } from "@/components/Layout";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import { getConfig } from "@/config/config";
+import { useRouter } from "next/dist/client/router";
 
 const queryClient = new QueryClient({ defaultOptions });
 
@@ -17,6 +18,8 @@ const meta = {
 export const titleTemplate = `%s | ${meta.title}`;
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { asPath } = useRouter();
+
   return (
     <QueryClientProvider client={queryClient}>
       <DefaultSeo

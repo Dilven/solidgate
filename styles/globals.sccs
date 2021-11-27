@@ -1,3 +1,9 @@
+:root {
+  --brand-color-main: #48a36f;
+  --brand-color-lighter: #{lighten(#5ab783, 20%)};
+  --brand-color-secondary: #e12899;
+}
+
 html,
 body {
   padding: 0;
