@@ -9,7 +9,7 @@ const Gallery: NextPage = () => {
     <Layout
       title={pageTitles.balustrady}
       banner={galeriaBalustradyImg}
-    ></Layout>
+    >Balustrady</Layout>
   );
 };
 
