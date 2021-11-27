@@ -1,13 +1,19 @@
-import type { NextPage } from 'next'
-import { Head } from '@/components/Head'
+import type { GetStaticProps, NextPage } from "next";
+import { Head } from "@/components/Head";
+import { Banner } from "@/components/Banner";
+import kontaktBanner from "../public/kontakt-banner.jpg";
 
 const Contact: NextPage = () => {
   return (
     <>
-      <Head title="Solidgate" content=""/>
+      <Head title="Solidgate - Kontakt" content="" />
+      <Banner src={kontaktBanner} />
       <span>Kontakt</span>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
+export const getStaticProps: GetStaticProps = async (context) => {
+  return { props: {} };
+};
