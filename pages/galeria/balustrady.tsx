@@ -1,17 +1,19 @@
 import type { GetStaticProps, NextPage } from "next";
-import kontaktBanner from "../public/kontakt-banner.jpg";
+import React from "react";
 import { Layout } from "@/components/Layout/Layout";
+import galeriaBalustradyImg from "../../public/galeria-balustrady-banner.jpg";
 import { pageTitles } from "@/helpers/metadata";
 
-const Contact: NextPage = () => {
+
+const Gallery: NextPage = () => {
   return (
-    <Layout title={pageTitles.kontakt} banner={kontaktBanner}>
-      <span>Kontakt</span>
+    <Layout title={pageTitles.balustrady} banner={galeriaBalustradyImg}>
+     
     </Layout>
   );
 };
 
-export default Contact;
+export default Gallery;
 export const getStaticProps: GetStaticProps = async (context) => {
   return { props: {} };
 };

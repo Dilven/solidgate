@@ -8,7 +8,7 @@ export const useMaintance = () => {
         'true',
       );
     return {
-        isMaintanceMode,
+        isMaintanceMode: isMaintanceMode === 'true',
         setMaintanceMode
     }
 }

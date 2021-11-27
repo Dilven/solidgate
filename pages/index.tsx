@@ -3,7 +3,7 @@ import mainBanner from "../public/main-banner.jpg";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import { Separator } from "@/components/Separator/Separator";
-import { GalerySection } from "@/components/GalerySection/GalerySection";
+import { GallerySection } from "@/components/GallerySection/GallerySection";
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         </p>
       </section>
       <Separator />
-      <GalerySection />
+      <GallerySection />
     </Layout>
   );
 };
