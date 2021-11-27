@@ -14,7 +14,7 @@ export const CookiesPopup = () => {
     return (
       <div className={styles.popup}>
         <p className={styles.popupText}>
-          Ta strona, tak jak praktycznie każda w internecie, wykorzystuje ciasteczka.
+          Używamy plików cookie, aby zapewnić najwyższą funkcjonalność naszych stron
         </p>
         <button className={styles.acceptButton} onClick={() => setAccepted('accepted')}>
           Rozumiem
