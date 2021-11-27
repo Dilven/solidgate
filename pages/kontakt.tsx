@@ -6,7 +6,10 @@ import kontaktBanner from "../public/kontakt-banner.jpg";
 const Contact: NextPage = () => {
   return (
     <>
-      <Head title="Solidgate - Kontakt" content="Jak można się z nami skontaktować" />
+      <Head
+        title="Solidgate - Kontakt"
+        content="Jak można się z nami skontaktować"
+      />
       <Banner src={kontaktBanner} />
       <span>Kontakt</span>
     </>
