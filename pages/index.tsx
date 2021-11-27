@@ -1,7 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
 import mainBanner from "../public/main-banner.jpg";
 import React from "react";
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/components/Layout/Layout";
 
 const Home: NextPage = () => {
   return (

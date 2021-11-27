@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { defaultOptions } from "@/config/cache";
-import { Layout } from "@/components/Layout";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import { getConfig } from "@/config/config";

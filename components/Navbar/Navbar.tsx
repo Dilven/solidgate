@@ -1,6 +1,6 @@
 import { clientPaths } from "@/config/paths";
-import React, { ReactNode } from "react";
-import { NavLink } from "./Navlink";
+import React from "react";
+import { NavLink } from "../Navlink/Navlink";
 
 export const Navbar = () => (
   <>

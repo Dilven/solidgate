@@ -1,10 +1,9 @@
-import { titleTemplate } from "@/pages/_app";
 import { NextSeo } from "next-seo";
 import React, { ReactNode } from "react";
-import { Banner } from "./Banner";
-import { CookiesPopup } from "./CookiesPopup/CookiesPopup";
-import { Footer } from "./Footer";
-import { Navbar } from "./Navbar";
+import { Banner } from "../Banner/Banner";
+import { CookiesPopup } from "../CookiesPopup/CookiesPopup";
+import { Footer } from "../Footer/Footer";
+import { Navbar } from "../Navbar/Navbar";
 
 interface Props {
   readonly children: ReactNode;
