@@ -8,6 +8,7 @@ export const meta = {
 export const titleTemplate = `%s | ${meta.title}`;
 
 export const pageTitles: Record<keyof typeof clientPaths, string> = {
+  solidgate: "Solidgate",
   balustrady: "Galeria - Balustrady",
   balustradySchodowe: "Galeria - Balustrady schodowe",
   bramyIFurtki: "Galeria - Furtki i bramy",
