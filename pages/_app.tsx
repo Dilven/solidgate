@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, user-scalable=yes, initial-scale=1.0, viewport-fit=cover"
         />
       </Head>
-      {isMaintanceMode ? <Maintance /> : <Component {...pageProps} /> }
+      {isMaintanceMode ? <Maintance /> : <Component {...pageProps} />}
     </QueryClientProvider>
   );
 }

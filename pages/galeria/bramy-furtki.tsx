@@ -6,14 +6,13 @@ import { pageTitles } from "@/helpers/metadata";
 
 const Page: NextPage = () => {
   return (
-    <Layout
-      title={pageTitles.bramyIFurtki}
-      banner={banner}
-    >Bramy i furtki</Layout>
+    <Layout title={pageTitles.bramyIFurtki} banner={banner}>
+      Bramy i furtki
+    </Layout>
   );
 };
 
-export default Page
+export default Page;
 export const getStaticProps: GetStaticProps = async (context) => {
   return { props: {} };
 };

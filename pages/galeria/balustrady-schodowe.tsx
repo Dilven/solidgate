@@ -6,14 +6,13 @@ import { pageTitles } from "@/helpers/metadata";
 
 const Page: NextPage = () => {
   return (
-    <Layout
-      title={pageTitles.balustradySchodowe}
-      banner={banner}
-    >Balustrady schodowe</Layout>
+    <Layout title={pageTitles.balustradySchodowe} banner={banner}>
+      Balustrady schodowe
+    </Layout>
   );
 };
 
-export default Page
+export default Page;
 export const getStaticProps: GetStaticProps = async (context) => {
   return { props: {} };
 };

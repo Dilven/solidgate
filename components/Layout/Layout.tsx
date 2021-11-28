@@ -12,8 +12,15 @@ interface Props {
   readonly banner: StaticImageData;
 }
 
-export const Layout = ({ children, title: providedTitle, titleTemplate, banner }: Props) => {
-  const title = titleTemplate ? titleTemplate.replace("%s", providedTitle) : providedTitle
+export const Layout = ({
+  children,
+  title: providedTitle,
+  titleTemplate,
+  banner,
+}: Props) => {
+  const title = titleTemplate
+    ? titleTemplate.replace("%s", providedTitle)
+    : providedTitle;
   return (
     <div className={styles.wrapper}>
       <NextSeo

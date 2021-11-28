@@ -6,14 +6,13 @@ import { pageTitles } from "@/helpers/metadata";
 
 const Page: NextPage = () => {
   return (
-    <Layout
-      title={pageTitles.ogrodzenia}
-      banner={banner}
-    >Ogrodzenia</Layout>
+    <Layout title={pageTitles.ogrodzenia} banner={banner}>
+      Ogrodzenia
+    </Layout>
   );
 };
 
-export default Page
+export default Page;
 export const getStaticProps: GetStaticProps = async (context) => {
   return { props: {} };
 };
