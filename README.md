@@ -1,15 +1,6 @@
 ## About
 
-Boilerplate for quick check of ideas
-
-Includes
-
-- react
-- next
-- hapi/boom
-- react-query
-- axios
-- zod
+Website created for my dad's company
 
 ## Getting Started
 
@@ -20,3 +11,12 @@ npm run dev
 # or
 yarn dev
 ```
+
+## TODO
+
+- remove dangerouslySetAllPagesToNoFollow,  dangerouslySetAllPagesToNoIndex, dangerouslyDisableGooglebot
+
+- google analytics
+- google map
+- contact form
+- webvitals
