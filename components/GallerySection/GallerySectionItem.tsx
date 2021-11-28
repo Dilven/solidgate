@@ -3,10 +3,10 @@ import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";
 
 interface Props {
-  title: string;
-  description: string;
-  href: string;
-  img: StaticImageData;
+  readonly title: string;
+  readonly description: string;
+  readonly href: string;
+  readonly img: StaticImageData;
 }
 
 export const GallerySectionItem = ({
@@ -19,7 +19,7 @@ export const GallerySectionItem = ({
     <div className={styles.item}>
       <div className={styles.overlay}>
         <h2>{title}</h2>
-        <Image src={img} alt={`${title} - Galeria`} priority />
+        <Image src={img} alt={`${title} - Galeria`} />
         <Link href={href}>Galeria</Link>
       </div>
       <h3>{title}</h3>

@@ -4,12 +4,12 @@ import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import { Separator } from "@/components/Separator/Separator";
 import { GallerySection } from "@/components/GallerySection/GallerySection";
+import { Section } from "@/components/Section/Section";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Strona główna" banner={mainBanner}>
-      <section>
-        <h1>O firmie</h1>
+    <Layout title="O Firmie" titleTemplate="Solidgate - %s" banner={mainBanner}>
+      <Section label="Firma z tradycjami">
         <p>
           Solidgate działa na rynku już od ponad 15 lat. Wykonujemy oraz
           montujemy nowoczesne oraz trwałe ogrodzenia kute, balustrady, bramy i
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           Zapraszamy serdecznie do zapoznania się z naszą ofertą a także do
           kontaktu telefonicznego lub mailowego. Odpowiemy na każde pytania
         </p>
-      </section>
+      </Section>
       <Separator />
       <GallerySection />
     </Layout>

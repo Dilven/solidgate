@@ -1,4 +1,5 @@
 export const navigationPaths = {
+  solidgate: "/",
   galeria: "/galeria",
   kontakt: "/kontakt",
 };
@@ -6,7 +7,7 @@ export const navigationPaths = {
 export const galleryPaths = {
   bramyIFurtki: "/galeria/bramy-furtki",
   balustrady: "/galeria/balustrady",
-  balustradySchodowe: "/galeria/barlustrady-schodowe",
+  balustradySchodowe: "/galeria/balustrady-schodowe",
   ogrodzenia: "/galeria/ogrodzenia",
 };
 

@@ -9,20 +9,24 @@ interface Props {
   readonly children: ReactNode;
   readonly title: string;
   readonly titleTemplate?: string;
-  banner: StaticImageData;
+  readonly banner: StaticImageData;
 }
 
-export const Layout = ({ children, title, titleTemplate, banner }: Props) => {
+export const Layout = ({ children, title: providedTitle, titleTemplate, banner }: Props) => {
+  const title = titleTemplate ? titleTemplate.replace("%s", providedTitle) : providedTitle
   return (
     <div className={styles.wrapper}>
       <NextSeo
-        title={titleTemplate ? titleTemplate.replace("%s", title) : title}
+        title={title}
         openGraph={{
-          title: titleTemplate ? titleTemplate.replace("%s", title) : title,
+          title,
         }}
       />
-      <Header banner={banner} />
-      <main className={styles.main}>{children}</main>
+      <Header banner={banner} title={title} />
+      <main className={styles.main}>
+        <h1>{title}</h1>
+        {children}
+      </main>
       <Footer />
       <CookiesPopup />
     </div>

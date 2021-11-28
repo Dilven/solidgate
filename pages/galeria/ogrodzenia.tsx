@@ -1,19 +1,19 @@
 import type { GetStaticProps, NextPage } from "next";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
-import galeriaBalustradyImg from "../../public/galeria-balustrady-banner.jpg";
+import banner from "../../public/main-banner.jpg";
 import { pageTitles } from "@/helpers/metadata";
 
-const Gallery: NextPage = () => {
+const Page: NextPage = () => {
   return (
     <Layout
       title={pageTitles.ogrodzenia}
-      banner={galeriaBalustradyImg}
+      banner={banner}
     >Ogrodzenia</Layout>
   );
 };
 
-export default Gallery;
+export default Page
 export const getStaticProps: GetStaticProps = async (context) => {
   return { props: {} };
 };

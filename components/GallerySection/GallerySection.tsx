@@ -2,6 +2,7 @@ import styles from "./GallerySection.module.scss";
 import { GallerySectionItem } from "./GallerySectionItem";
 import galeriaBalustradyImg from "../../public/galeria-balustrady.jpg";
 import { galleryPaths } from "@/config/paths";
+import { Section } from "@/components/Section/Section";
 
 const items = [
   {
@@ -34,10 +35,10 @@ const items = [
 ];
 export const GallerySection = () => {
   return (
-    <section className={styles.section}>
+    <Section label="Galeria naszych prac" className={styles.section}>
       {items.map((item) => (
         <GallerySectionItem key={item.title} {...item} />
       ))}
-    </section>
+    </Section>
   );
 };
