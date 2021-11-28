@@ -24,3 +24,5 @@ yarn dev
 - inspiration page
 - blog
 - automatically generated marketing content on the website 
+- Write unique meta descriptions for each page.
+- more internal and external links
