@@ -1,8 +1,14 @@
-import { navigationPaths } from "@/config/paths";
+import { paths } from "@/config/paths";
 import React from "react";
 import { NavLink } from "../Navlink/Navlink";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
+
+export const navigationLinks = [
+  { name: "O firmie", path: paths.solidgate },
+  { name: "Galeria", path: paths.galeria },
+  { name: "Kontakt", path: paths.kontakt },
+];
 
 export const Navbar = () => (
   <nav className={styles.nav}>
@@ -10,7 +16,7 @@ export const Navbar = () => (
       <a className={styles.brand}>Solidgate</a>
     </Link>
     <menu className={styles.list}>
-      {Object.entries(navigationPaths).map(([name, path]) => (
+      {navigationLinks.map(({ name, path }) => (
         <NavLink key={name} path={path}>
           {name}
         </NavLink>

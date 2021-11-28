@@ -1,5 +1,5 @@
-import { navigationPaths } from "@/config/paths";
 import { ContactDetails } from "../ContactDetails/ContactDetails";
+import { navigationLinks } from "../Navbar/Navbar";
 import { NavLink } from "../Navlink/Navlink";
 import styles from "./Footer.module.scss";
 
@@ -13,7 +13,7 @@ export const Footer = () => {
         </div>
         <div className={styles.contact}>
           <menu className={styles.list}>
-            {Object.entries(navigationPaths).map(([name, path]) => (
+            {navigationLinks.map(({ name, path }) => (
               <NavLink key={name} path={path}>
                 {name}
               </NavLink>

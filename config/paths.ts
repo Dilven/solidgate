@@ -1,23 +1,11 @@
-export const navigationPaths = {
-  "o firmie": "/",
-  galeria: "/galeria",
-  kontakt: "/kontakt",
-};
-
-export const galleryPaths = {
+export const paths = {
   bramyIFurtki: "/galeria/bramy-furtki",
   balustrady: "/galeria/balustrady",
   balustradySchodowe: "/galeria/balustrady-schodowe",
   ogrodzenia: "/galeria/ogrodzenia",
-};
-
-export const clientPaths = {
-  ...navigationPaths,
-  ...galleryPaths,
-};
-
-export const paths = {
-  ...clientPaths,
+  solidgate: "/",
+  galeria: "/galeria",
+  kontakt: "/kontakt",
   api: {
     items: "/api/items",
   },

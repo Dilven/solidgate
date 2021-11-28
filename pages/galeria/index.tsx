@@ -5,7 +5,7 @@ import { Layout } from "@/components/Layout/Layout";
 import { Separator } from "@/components/Separator/Separator";
 import { GallerySection } from "@/components/GallerySection/GallerySection";
 import Link from "next/link";
-import { navigationPaths } from "@/config/paths";
+import { paths } from "@/config/paths";
 import { pageTitles } from "@/helpers/metadata";
 
 const Gallery: NextPage = () => {
@@ -28,7 +28,7 @@ const Gallery: NextPage = () => {
       <p>
         Zapraszamy do obejrzenia galerii gdzie mogą państwo obejrzeć nasze prace
         i zaczerpnąć inspiracji dla siebie. W razie jakichkolwiek pytań
-        zapraszamy do <Link href={navigationPaths.kontakt}>kontaktu</Link>.
+        zapraszamy do <Link href={paths.kontakt}>kontaktu</Link>.
       </p>
       <Separator />
       <GallerySection />

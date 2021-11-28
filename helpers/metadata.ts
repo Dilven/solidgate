@@ -1,4 +1,4 @@
-import { clientPaths } from "@/config/paths";
+import { paths } from "@/config/paths";
 
 export const meta = {
   title: "Solidgate",
@@ -7,7 +7,7 @@ export const meta = {
 
 export const titleTemplate = `%s | ${meta.title}`;
 
-export const pageTitles: Record<keyof typeof clientPaths, string> = {
+export const pageTitles: Partial<Record<keyof typeof paths, string>> = {
   solidgate: "Solidgate",
   balustrady: "Galeria - Balustrady",
   balustradySchodowe: "Galeria - Balustrady schodowe",
