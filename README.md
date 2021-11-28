@@ -23,3 +23,4 @@ yarn dev
 - improve pwa
 - inspiration page
 - blog
+- automatically generated marketing content on the website 
