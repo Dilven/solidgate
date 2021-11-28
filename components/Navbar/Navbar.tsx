@@ -15,12 +15,12 @@ export const Navbar = () => (
     <Link href="/" passHref>
       <a className={styles.brand}>Solidgate</a>
     </Link>
-    <menu className={styles.list}>
+    <ul className={styles.list}>
       {navigationLinks.map(({ name, path }) => (
         <NavLink key={name} path={path}>
           {name}
         </NavLink>
       ))}
-    </menu>
+    </ul>
   </nav>
 );

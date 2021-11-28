@@ -12,13 +12,13 @@ export const Footer = () => {
           <ContactDetails />
         </div>
         <div className={styles.contact}>
-          <menu className={styles.list}>
+          <ul className={styles.list}>
             {navigationLinks.map(({ name, path }) => (
               <NavLink key={name} path={path}>
                 {name}
               </NavLink>
             ))}
-          </menu>
+          </ul>
         </div>
       </div>
     </footer>
