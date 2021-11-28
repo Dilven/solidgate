@@ -8,14 +8,12 @@ import { DefaultSeo } from "next-seo";
 import { getConfig } from "@/config/config";
 import { useRouter } from "next/dist/client/router";
 import { meta } from "@/helpers/metadata";
-import { useMaintance } from "@/hooks/useMaintance";
 import { Maintance } from "@/components/Maintance/Maintance";
 
 const queryClient = new QueryClient({ defaultOptions });
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { asPath } = useRouter();
-  const { isMaintanceMode } = useMaintance();
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -49,7 +47,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, user-scalable=yes, initial-scale=1.0, viewport-fit=cover"
         />
       </Head>
-      {isMaintanceMode ? <Maintance /> : <Component {...pageProps} />}
+      <Maintance>
+        <Component {...pageProps} />
+      </Maintance>
     </QueryClientProvider>
   );
 }
