@@ -9,6 +9,7 @@ export const Banner = ({ src, title }: Props) => {
   return (
     <div className={styles.banner}>
       <Image src={src} alt={`${title} - banner`} priority placeholder="blur" />
+      <span className={styles.title}>Solidgate</span>
     </div>
   );
 };

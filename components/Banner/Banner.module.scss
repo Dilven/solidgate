@@ -1,4 +1,17 @@
 .banner {
+  position: relative;
   box-shadow: 10px 20px 70px -15px rgb(44 44 56 / 20%),
     5px 5px 25px -20px rgb(10 11 14 / 40%);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 7rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }

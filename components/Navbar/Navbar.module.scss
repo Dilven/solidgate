@@ -6,12 +6,13 @@
   right: 0;
   left: 0;
   z-index: 2;
-  opacity: 0.9;
   background-color: var(--gray-shadow);
+  opacity: 0.9;
   border-color: var(--black-lighter);
-  padding: 0 2rem 0 2rem;
+  font-weight: bold;
+  padding: 2rem 12rem;
   color: var(--white);
-  padding: 1rem 0;
+  font-family: BrandonTextWeb-Bold,sans-serif;
 }
 
 .list {

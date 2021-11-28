@@ -1,5 +1,5 @@
 export const navigationPaths = {
-  solidgate: "/",
+  "o firmie": "/",
   galeria: "/galeria",
   kontakt: "/kontakt",
 };
