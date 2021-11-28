@@ -7,7 +7,7 @@ export const meta = {
 
 export const titleTemplate = `%s | ${meta.title}`;
 
-export const pageTitles: Partial<Record<keyof typeof paths, string>> = {
+export const pageTitles = {
   solidgate: "Solidgate",
   balustrady: "Galeria - Balustrady",
   balustradySchodowe: "Galeria - Balustrady schodowe",
