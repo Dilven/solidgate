@@ -20,3 +20,6 @@ yarn dev
 - google map
 - contact form
 - webvitals
+- improve pwa
+- inspiration page
+- blog
