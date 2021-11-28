@@ -9,7 +9,7 @@ import { getConfig } from "@/config/config";
 import { useRouter } from "next/dist/client/router";
 import { meta } from "@/helpers/metadata";
 import { Maintance } from "@/components/Maintance/Maintance";
-import SimpleReactLightbox from 'simple-react-lightbox'
+import SimpleReactLightbox from "simple-react-lightbox";
 
 const queryClient = new QueryClient({ defaultOptions });
 
@@ -49,9 +49,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Maintance>
-      <SimpleReactLightbox>
-        <Component {...pageProps} />
-      </SimpleReactLightbox>
+        <SimpleReactLightbox>
+          <Component {...pageProps} />
+        </SimpleReactLightbox>
       </Maintance>
     </QueryClientProvider>
   );

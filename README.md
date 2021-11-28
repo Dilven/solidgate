@@ -14,7 +14,7 @@ yarn dev
 
 ## TODO
 
-- remove dangerouslySetAllPagesToNoFollow,  dangerouslySetAllPagesToNoIndex, dangerouslyDisableGooglebot
+- remove dangerouslySetAllPagesToNoFollow, dangerouslySetAllPagesToNoIndex, dangerouslyDisableGooglebot
 
 - google analytics
 - google map

@@ -13,8 +13,8 @@ export const Maintance = ({ children }: Props) => {
     "false"
   );
 
-  if(isMaintanceMode === "true") {
+  if (isMaintanceMode === "true") {
     return <div>Maintance mode</div>;
-  } 
-  return <>{children}</>
+  }
+  return <>{children}</>;
 };

@@ -9,7 +9,13 @@ interface Props {
 export const GalleryItem = ({ src, title }: Props) => {
   return (
     <li className={styles.item}>
-      <Image src={src} alt={title} width="100%" height="100%" objectFit="cover"/>
+      <Image
+        src={src}
+        alt={title}
+        width="100%"
+        height="100%"
+        objectFit="cover"
+      />
     </li>
   );
 };
