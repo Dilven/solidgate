@@ -10,7 +10,7 @@ type IsMaintanceMode = "true" | "false";
 export const Maintance = ({ children }: Props) => {
   const [isMaintanceMode] = useLocalStorage<IsMaintanceMode>(
     "isMaintanceMode",
-    "true"
+    "false"
   );
 
   if(isMaintanceMode === "true") {
