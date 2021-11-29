@@ -27,3 +27,6 @@ yarn dev
 - automatically generated marketing content on the website 
 - Write unique meta descriptions for each page.
 - more internal and external links
+- fonts in woff2
+- font subset
+- variable fonts (@font face)
