@@ -12,6 +12,16 @@ npm run dev
 yarn dev
 ```
 
+## Requirements
+
+- node
+- npm
+
+## Environment variables
+
+- env.example (example how should look env.local)
+- env.local (secrets for production instances which shouldn't be published)
+
 ## TODO
 
 - remove dangerouslySetAllPagesToNoFollow, dangerouslySetAllPagesToNoIndex, dangerouslyDisableGooglebot

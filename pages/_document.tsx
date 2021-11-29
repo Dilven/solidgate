@@ -7,6 +7,22 @@ class MyDocument extends Document {
     return (
       <Html lang="pl">
         <Head>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${getConfig('NEXT_PUBLIC_GOOGLE_ANALYTICS')}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${getConfig('NEXT_PUBLIC_GOOGLE_ANALYTICS')}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
           <meta name="application-name" content={meta.title} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta

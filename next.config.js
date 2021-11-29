@@ -18,6 +18,8 @@ module.exports = withPWA({
     publicRuntimeConfig: {
       NEXT_PUBLIC_GOOGLE_MAPS_API_KEY:
         process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+      NEXT_PUBLIC_GOOGLE_ANALYTICS:
+        process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
       NEXT_PUBLIC_INTERNAL_API_TIMEOUT:
         process.env.NEXT_PUBLIC_INTERNAL_API_TIMEOUT,
       NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
