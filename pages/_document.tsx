@@ -9,7 +9,9 @@ class MyDocument extends Document {
         <Head>
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${getConfig('NEXT_PUBLIC_GOOGLE_ANALYTICS')}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${getConfig(
+              "NEXT_PUBLIC_GOOGLE_ANALYTICS"
+            )}`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -17,7 +19,7 @@ class MyDocument extends Document {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${getConfig('NEXT_PUBLIC_GOOGLE_ANALYTICS')}', {
+            gtag('config', '${getConfig("NEXT_PUBLIC_GOOGLE_ANALYTICS")}', {
               page_path: window.location.pathname,
             });
           `,

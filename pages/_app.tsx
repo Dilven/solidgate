@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import React from "react";
+import React, { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { defaultOptions } from "@/config/cache";
 import Head from "next/head";
@@ -10,11 +10,17 @@ import { useRouter } from "next/dist/client/router";
 import { meta } from "@/helpers/metadata";
 import { Maintance } from "@/components/Maintance/Maintance";
 import SimpleReactLightbox from "simple-react-lightbox";
+import { pageview } from "@/helpers/analytics";
 
 const queryClient = new QueryClient({ defaultOptions });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const { asPath } = useRouter();
+  const { asPath, events } = useRouter();
+  useEffect(() => {
+    const reportRouteChange = (url: string) => pageview(url);
+    events.on("routeChangeComplete", reportRouteChange);
+    return () => events.off("routeChangeComplete", reportRouteChange);
+  }, [events]);
 
   return (
     <QueryClientProvider client={queryClient}>
