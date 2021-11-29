@@ -7,7 +7,7 @@ import { pageTitles } from "@/helpers/metadata";
 import { Gallery } from "@/components/Gallery/Gallery";
 import { images } from "data/gallery/balustrady";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <Layout title={pageTitles.balustrady} banner={banner}>
       <p>
@@ -30,6 +30,6 @@ const Page: NextPage = () => {
 };
 
 export default Page;
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = () => {
   return { props: {} };
 };

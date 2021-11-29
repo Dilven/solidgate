@@ -8,7 +8,7 @@ import Link from "next/link";
 import { paths } from "@/config/paths";
 import { pageTitles } from "@/helpers/metadata";
 
-const Gallery: NextPage = () => {
+const Gallery = () => {
   return (
     <Layout title={pageTitles.galeria} banner={galeriaBanner}>
       <p>
@@ -37,6 +37,6 @@ const Gallery: NextPage = () => {
 };
 
 export default Gallery;
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = () => {
   return { props: {} };
 };

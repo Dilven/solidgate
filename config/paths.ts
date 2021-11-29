@@ -6,6 +6,7 @@ export const paths = {
   solidgate: "/",
   galeria: "/galeria",
   kontakt: "/kontakt",
+  blog: "/blog",
   api: {
     items: "/api/items",
   },

@@ -15,4 +15,5 @@ export const pageTitles = {
   ogrodzenia: "Galeria - Ogrodzenia",
   galeria: "Galeria",
   kontakt: "Kontakt",
+  blog: "Blog - ogrodzenia, bramy i furtki",
 };

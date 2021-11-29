@@ -6,7 +6,7 @@ import { Separator } from "@/components/Separator/Separator";
 import { GallerySection } from "@/components/GallerySection/GallerySection";
 import { Section } from "@/components/Section/Section";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Layout title="O Firmie" titleTemplate="Solidgate - %s" banner={mainBanner}>
       <Section label="Firma z tradycjami">
@@ -54,6 +54,6 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = () => {
   return { props: {} };
 };

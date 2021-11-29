@@ -6,7 +6,7 @@ import { Section } from "@/components/Section/Section";
 import { ContactDetails } from "@/components/ContactDetails/ContactDetails";
 import { GoogleMap } from "@/components/GoogleMap/GoogleMap";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <Layout title={pageTitles.kontakt} banner={kontaktBanner}>
       <Section label="Nasz adres">
@@ -27,6 +27,6 @@ const Page: NextPage = () => {
 };
 
 export default Page;
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = () => {
   return { props: {} };
 };

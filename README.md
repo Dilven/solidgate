@@ -23,3 +23,4 @@ yarn dev
 - improve pwa
 - inspiration page
 - blog
+- fix type for markdown

@@ -4,7 +4,7 @@ import { Layout } from "@/components/Layout/Layout";
 import banner from "../../public/main-banner.jpg";
 import { pageTitles } from "@/helpers/metadata";
 
-const Page: NextPage = () => {
+const Page = () => {
   return (
     <Layout title={pageTitles.balustradySchodowe} banner={banner}>
       Balustrady schodowe
@@ -13,6 +13,6 @@ const Page: NextPage = () => {
 };
 
 export default Page;
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = () => {
   return { props: {} };
 };
