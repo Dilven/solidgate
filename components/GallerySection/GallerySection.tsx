@@ -10,6 +10,7 @@ const items = [
     description: "Szeroki wybór balustrad od klasycznych do nowoczesnych.",
     img: galeriaBalustradyImg,
     href: paths.balustrady,
+    className: styles.balustrady
   },
   {
     title: "Balustrady schodowe",
@@ -17,6 +18,7 @@ const items = [
       "Szeroki wybór bram i furtek. Posiadamy w ofercie bramy 2-skrzydłowe jak i przesuwne w wielu wzorach.",
     img: galeriaBalustradyImg,
     href: paths.balustradySchodowe,
+    className: styles.schodowe
   },
   {
     title: "Furtki i bramy",
@@ -24,6 +26,7 @@ const items = [
       "Aby sprostać oczekiwaniom współczesnych klientów, posiadamy spory wybór wzorów balustrad schodowych",
     img: galeriaBalustradyImg,
     href: paths.bramyIFurtki,
+    className: styles.furtki
   },
   {
     title: "Ogrodzenia",
@@ -31,6 +34,7 @@ const items = [
       "Dobrze wybrane ogrodzenie wraz z bramą i furtką tworzą piękną wizytówke naszego domu.",
     img: galeriaBalustradyImg,
     href: paths.ogrodzenia,
+    className: styles.ogrodzenia
   },
 ];
 export const GallerySection = () => {

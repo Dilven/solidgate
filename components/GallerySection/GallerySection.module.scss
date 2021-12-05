@@ -1,6 +1,22 @@
 .section {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "balustrady schodowe" "furtki ogrodzenia"
+}
+
+.ogrodzenia {
+  grid-area: "ogrodzenia";
+}
+
+.furtki {
+  grid-area: "furtki";
+}
+
+.balustrady {
+  grid-area: "balustrady";
+}
+
+.schodowe {
+  grid-area: "schodowe";
 }

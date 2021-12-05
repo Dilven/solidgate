@@ -44,7 +44,7 @@ const Home = () => {
         </p>
         <p>
           Zapraszamy serdecznie do zapoznania się z naszą ofertą a także do
-          kontaktu telefonicznego lub mailowego. Odpowiemy na każde pytania
+          kontaktu telefonicznego lub mailowego. Odpowiemy na każde Państwa pytanie.
         </p>
       </Section>
       <Separator />

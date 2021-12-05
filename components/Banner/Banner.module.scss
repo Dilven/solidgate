@@ -1,7 +1,9 @@
+@import '../../styles/mixins.scss';
+
 .banner {
   position: relative;
-  box-shadow: 10px 20px 70px -15px rgb(44 44 56 / 20%),
-    5px 5px 25px -20px rgb(10 11 14 / 40%);
+  height: 100vh;
+  overflow: hidden;
 }
 
 .title {
@@ -14,4 +16,16 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+
+  @include breakpoint(md) {
+    font-size: 5rem;
+  }
+
+  @include breakpoint(sm) {
+    font-size: 4rem;
+  }
+
+  @include breakpoint(xs) {
+    font-size: 3rem;
+  }
 }

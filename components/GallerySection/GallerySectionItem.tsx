@@ -1,4 +1,5 @@
 import Image from "next/image";
+import cx from 'classnames';
 import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";
 
@@ -7,6 +8,7 @@ interface Props {
   readonly description: string;
   readonly href: string;
   readonly img: StaticImageData;
+  readonly className?: string;
 }
 
 export const GallerySectionItem = ({
@@ -14,13 +16,20 @@ export const GallerySectionItem = ({
   description,
   img,
   href,
+  className
 }: Props) => {
   return (
-    <div className={styles.item}>
-      <div className={styles.overlay}>
-        <h2>{title}</h2>
-        <Image src={img} alt={`${title} - Galeria`} />
-        <Link href={href}>Galeria</Link>
+    <div className={cx(styles.item, className)}>
+      <div className={styles.content}>
+        <div className={styles.image}>
+          <Image src={img} alt={`${title} - Galeria`} objectFit="cover" layout="fill" />
+        </div>
+        <div className={styles.overlay}>
+          <h2>{title}</h2>
+          <Link href={href} passHref>
+            <a>Galeria</a>
+          </Link>
+        </div>
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
