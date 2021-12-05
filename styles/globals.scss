@@ -7,14 +7,16 @@
   --gray-shadow: #222;
   --black: #000000;
   --black-lighter: #{lighten(#000000, 20%)};
+  --font-primary: #333;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, Josefin Slab, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--font-primary)
 }
 
 a {
