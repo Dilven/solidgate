@@ -1,7 +1,8 @@
 @import '../../styles/mixins.scss';
 
 .section {
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-gap: 2rem;
   grid-template-areas: "balustrades staircase-railings" "wickets fences";
@@ -12,17 +13,17 @@
 }
 
 .fences {
-  grid-area: "fences";
+  grid-area: fences;
 }
 
 .wickets {
-  grid-area: "wickets";
+  grid-area: wickets;
 }
 
 .balustrades {
-  grid-area: "balustrades";
+  grid-area: balustrades;
 }
 
 .staircase-railings {
-  grid-area: "staircase-railings";
+  grid-area: staircase-railings;
 }

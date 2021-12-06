@@ -31,8 +31,8 @@ export const GallerySectionItem = ({
           </Link>
         </div>
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 };
