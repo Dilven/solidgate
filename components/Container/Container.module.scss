@@ -1,10 +1,6 @@
 @import '../../styles/mixins.scss';
 
 $lg-padding: 15px;
-$lg-max-width: $breakpoint-lg - 2 * $lg-padding;
-$md-max-width: $breakpoint-md - 2 * $lg-padding;
-$sm-max-width: $breakpoint-sm - 2 * $lg-padding;
-$xs-max-width: $breakpoint-xs - 2 * $lg-padding;
 
 .container {
   margin-left: auto;
