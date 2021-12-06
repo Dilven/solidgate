@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
 import React, { ReactNode } from "react";
+import { Container } from "../Container/Container";
 import { CookiesPopup } from "../CookiesPopup/CookiesPopup";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
@@ -31,8 +32,10 @@ export const Layout = ({
       />
       <Header banner={banner} title={title} />
       <main className={styles.main}>
-        <h1>{title}</h1>
-        {children}
+        <Container>
+          <h1>{title}</h1>
+          {children}
+        </Container>
       </main>
       <Footer />
       <CookiesPopup />

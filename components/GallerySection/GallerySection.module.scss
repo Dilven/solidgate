@@ -1,6 +1,28 @@
+@import '../../styles/mixins.scss';
+
 .section {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "balustrades staircase-railings" "wickets fences";
+
+  @include breakpoint(xs) {
+    grid-template-areas: "balustrades" "staircase-railings" "wickets" "fences";
+  }
+}
+
+.fences {
+  grid-area: "fences";
+}
+
+.wickets {
+  grid-area: "wickets";
+}
+
+.balustrades {
+  grid-area: "balustrades";
+}
+
+.staircase-railings {
+  grid-area: "staircase-railings";
 }

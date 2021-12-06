@@ -1,3 +1,5 @@
+@import 'mixins';
+
 :root {
   --brand-color-main: #051622;
   --brand-color-lighter: #001f33;
@@ -7,14 +9,18 @@
   --gray-shadow: #222;
   --black: #000000;
   --black-lighter: #{lighten(#000000, 20%)};
+  --font-primary: #333;
+  --navbar-link-color: #9d9d9d;
 }
 
 html,
 body {
+  font-size: 16px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif Josefin Slab;
+  color: var(--font-primary)
 }
 
 a {
