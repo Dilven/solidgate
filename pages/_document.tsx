@@ -44,7 +44,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=optional"
             rel="stylesheet"
           />
         </Head>

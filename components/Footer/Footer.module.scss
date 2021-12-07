@@ -1,17 +1,34 @@
 .footer {
   background-color: var(--black);
-  color: var(--white);
   border-top: 3px solid var(--brand-color-main);
-  padding: 2rem 2rem 2rem 2rem;
+  font-size: 0.875rem;
+  color: var(--footer-text-color);
+  padding-bottom: 1rem;
 }
 
 .content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas: "company-name company-name" "contact navigation";
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  grid-area: contact;
+}
+
+.company {
+  grid-area: company-name;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.navigation {
+  margin: 0;
+  grid-area: navigation;
+  list-style: none;
+  text-align: right;
+
+  &-link {
+    padding: 0;
+    line-height: 1.8;
+  }
 }

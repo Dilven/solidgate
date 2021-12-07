@@ -36,3 +36,11 @@
     display: none;
   }
 }
+
+.link {
+  padding: 1rem;
+
+  @include breakpoint(xs) {
+    padding: 0.5rem;
+  }
+}

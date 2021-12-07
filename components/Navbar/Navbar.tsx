@@ -24,7 +24,7 @@ export const Navbar = () => {
         </Link>
         <ul className={styles.list}>
           {navigationLinks.map(({ name, path }) => (
-            <NavLink key={name} path={path} isActive={router.pathname == path}>
+            <NavLink key={name} linkClassName={styles.link} path={path} isActive={router.pathname == path}>
               {name}
             </NavLink>
           ))}
