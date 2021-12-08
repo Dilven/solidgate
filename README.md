@@ -57,4 +57,4 @@ yarn dev
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Projekt korzysta ze specyfikacji [all-contributors](https://github.com/all-contributors/all-contributors).
+This project follows the [all-contributors](https://allcontributors.org) specification.
