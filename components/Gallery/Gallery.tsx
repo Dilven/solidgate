@@ -1,11 +1,10 @@
 import { GalleryItem } from "./GalleryItem";
 import styles from "./Gallery.module.scss";
-import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import { Section } from "../Section/Section";
 
 interface Props {
-  readonly images: { src: StaticImageData; title: string }[];
+  readonly images: { src: string; title: string }[];
 }
 
 export const Gallery = ({ images }: Props) => {
