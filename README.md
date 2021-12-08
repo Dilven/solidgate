@@ -40,7 +40,6 @@ yarn dev
 - fonts in woff2
 - font subset
 - variable fonts (@font face)
-- add "inspirations" page
 
 ## Contributors ✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
