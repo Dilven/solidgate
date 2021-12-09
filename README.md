@@ -44,6 +44,7 @@ yarn dev
 - add service worker with cache to make it PWA
 - Lighthouse - reduce unused JavaScript
 - display independently the gallery image number (title) and alt
+- hotjar?
 
 ## Contributors ✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
