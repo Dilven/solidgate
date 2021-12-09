@@ -15,6 +15,7 @@
     "typing:check": "tsc --noEmit"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.11",
     "@hapi/boom": "^9.1.4",
     "@radix-ui/react-separator": "^0.1.1",
     "axios": "^0.24.0",
