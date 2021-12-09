@@ -1,6 +1,24 @@
+@import '../../styles/mixins.scss';
+
 .list {
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+
+  @include breakpoint(xs) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  @include breakpoint(sm) {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include breakpoint(lg) {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }

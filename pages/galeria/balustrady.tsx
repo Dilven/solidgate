@@ -5,7 +5,7 @@ import banner from "../../public/main-banner.jpg";
 import { pageTitles } from "@/helpers/metadata";
 
 import { Gallery } from "@/components/Gallery/Gallery";
-import { images } from "data/gallery/balustrady";
+import { images } from "data/gallery/balustrades";
 
 const Page = () => {
   return (
