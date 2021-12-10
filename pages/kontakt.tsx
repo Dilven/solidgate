@@ -5,14 +5,16 @@ import { pageTitles } from "@/helpers/metadata";
 import { Section } from "@/components/Section/Section";
 import { ContactDetails } from "@/components/ContactDetails/ContactDetails";
 import { GoogleMap } from "@/components/GoogleMap/GoogleMap";
+import { Button } from "@/components/Button/Button";
 
 const Page = () => {
+  const openNewTab = () => {
+    window.open('https://www.google.com/maps/dir//Solidgate,+Pątnów+67,+98-335+Pątnów/@51.1443768,18.6111619,17z', '_blank')?.focus();
+  }
+
   return (
     <Layout title={pageTitles.kontakt} banner={kontaktBanner}>
       <Section label="Nasz adres">
-        <h3>Nasz adres</h3>
-        <h4>Solidgate</h4>
-        <ContactDetails />
         <p>
           W razie pytań bądź wątpliwości prosimy o telefon. Ze względu na duże
           możliwości dostosowania ogrodzeń do Państwa wymagań prosimy o kontakt
@@ -20,7 +22,11 @@ const Page = () => {
           będziemy w stanie zaproponować Państwu wycenę i ustalić szczegóły
           realizacji.
         </p>
-        <GoogleMap />
+        <h4>Solidgate</h4>
+        <ContactDetails />
+        <br />
+        <Button onClick={openNewTab}>Sprawdź jak dojedziesz</Button>
+        <GoogleMap onMarkerPress={openNewTab} />
       </Section>
     </Layout>
   );
