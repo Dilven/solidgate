@@ -1,8 +1,46 @@
 .button {
-  background-color: var(--gray-shadow);
-  border: 1px solid var(--gray-shadow);
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: var(--white);
-  padding: 0.5rem 1rem;
+  color: var(--gray-shadow);
+  cursor: pointer;
+  max-width: 260px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  background: transparent;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  transition: letter-spacing 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  
+  svg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: var(--gray-shadow);
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  
+  &:hover, &:active, &:focus {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
 }

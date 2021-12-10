@@ -2,14 +2,17 @@ import { HTMLAttributes } from "react";
 import cx from 'classnames';
 import styles from "./Button.module.scss";
 
-interface Props extends Omit<HTMLAttributes<HTMLButtonElement>, 'children'> {
+interface Props extends Omit<HTMLAttributes<HTMLAnchorElement>, 'children'> {
   children: string;
 }
 
 export const Button = (props: Props) => (
-  <button {...props} className={cx(styles.button, props.className)}>
+  <a {...props} className={cx(styles.button, props.className)}>
+    <svg>
+      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+    </svg>
     <span>{props.children}</span>
-  </button>
+  </a>
 );
 
 Button.displayName = "Button";
