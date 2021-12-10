@@ -5,11 +5,13 @@ import { pageTitles } from "@/helpers/metadata";
 import { Section } from "@/components/Section/Section";
 import { ContactDetails } from "@/components/ContactDetails/ContactDetails";
 import { GoogleMap } from "@/components/GoogleMap/GoogleMap";
-import { Button } from "@/components/Button/Button";
+import { ButtonLink } from "@/components/ButtonLink/ButtonLink";
+
+const googleMapsDirectionsLink = 'https://www.google.com/maps/dir//Solidgate,+Pątnów+67,+98-335+Pątnów/@51.1443768,18.6111619,17z';
 
 const Page = () => {
   const openNewTab = () => {
-    window.open('https://www.google.com/maps/dir//Solidgate,+Pątnów+67,+98-335+Pątnów/@51.1443768,18.6111619,17z', '_blank')?.focus();
+    window.open(googleMapsDirectionsLink, '_blank')?.focus();
   }
 
   return (
@@ -25,7 +27,12 @@ const Page = () => {
         <h4>Solidgate</h4>
         <ContactDetails />
         <br />
-        <Button onClick={openNewTab}>Sprawdź jak dojedziesz</Button>
+        <ButtonLink
+          href={googleMapsDirectionsLink}
+          target="_blank"
+        >
+          Sprawdź jak dojedziesz
+        </ButtonLink>
         <GoogleMap onMarkerPress={openNewTab} />
       </Section>
     </Layout>
