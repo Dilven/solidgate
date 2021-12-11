@@ -22,7 +22,7 @@ export const Gallery = ({ images }: Props) => {
     <Section className={styles.gallery} label="Zdjęcia prac">
       <LightGallery mode="lg-fade" elementClassNames={styles.list} plugins={[lgZoom]}>
           {images.map(({ title, src }) => (
-            <GalleryItem key={title} title={title} src={src} />
+            <GalleryItem key={title} title={title} source={src} />
           ))}
       </LightGallery>
     </Section>

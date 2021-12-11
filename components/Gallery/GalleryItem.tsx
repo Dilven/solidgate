@@ -2,15 +2,15 @@ import Image from "next/image";
 import styles from "./GalleryItem.module.scss";
 
 interface Props {
-  readonly src: StaticImageData;
+  readonly source: StaticImageData;
   readonly title: string;
 }
 
-export const GalleryItem = ({ src, title }: Props) => {
+export const GalleryItem = ({ source, title }: Props) => {
   return (
-    <a className={styles.item} href={src.src}>
+    <a className={styles.item} href={source.src}>
         <Image
-          src={src}
+          src={source}
           alt={title}
           width="100%"
           height="100%"
