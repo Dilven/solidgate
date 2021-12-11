@@ -19,6 +19,7 @@
         transition-delay: .2s;
         transform: translatey(0);
         opacity: 1;
+        width: 200px;
       }
     }
   }
@@ -38,7 +39,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .image {
@@ -73,21 +74,11 @@
   }
 
   a {
-    text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #fff;
-    background-color: transparent;
+    display: inline-flex;
     opacity: 0;
-    transition: all .2s ease-in-out;
+    transition: translatey .2s ease-in-out;
     transition-delay: 0s;
     margin: 50px 0 0;
-    padding: 7px 14px;
-
-    &:hover {
-      box-shadow: 0 0 5px #fff;
-    }
   }
 }
 

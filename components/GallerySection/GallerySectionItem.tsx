@@ -2,6 +2,7 @@ import Image from "next/image";
 import cx from 'classnames';
 import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";
+import { ButtonLink } from "../ButtonLink/ButtonLink";
 
 interface Props {
   readonly title: string;
@@ -24,12 +25,12 @@ export const GallerySectionItem = ({
         <div className={styles.image}>
           <Image src={img} alt={`${title} - Galeria`} objectFit="cover" layout="fill" />
         </div>
-        <div className={styles.overlay}>
-          <h2>{title}</h2>
-          <Link href={href} passHref>
-            <a>Galeria</a>
-          </Link>
-        </div>
+        <Link href={href} passHref>
+          <div className={styles.overlay}>
+            <h2>{title}</h2>
+            <ButtonLink inverted href={href}>Galeria</ButtonLink>
+          </div>
+        </Link>
       </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
