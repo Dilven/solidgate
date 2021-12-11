@@ -8,7 +8,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 /** @type {import('next').NextConfig} */
 module.exports = withPWA({
   pwa: {
-    dest: "public",
+    dest: "public"
   },
   ...withBundleAnalyzer({
     reactStrictMode: true,
@@ -22,6 +22,9 @@ module.exports = withPWA({
       NEXT_PUBLIC_INTERNAL_API_TIMEOUT:
         process.env.NEXT_PUBLIC_INTERNAL_API_TIMEOUT,
       NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+    },
+    images: {
+      deviceSizes: [320, 450, 640, 750, 828, 1080, 1200, 1920, 2048, 3840]
     },
   }),
 });
