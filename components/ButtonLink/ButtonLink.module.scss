@@ -44,3 +44,11 @@
     }
   }
 }
+
+.inverted {
+  color: var(--white);
+
+  rect {
+    stroke: var(--white);
+  }
+}
