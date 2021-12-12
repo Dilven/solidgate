@@ -23,7 +23,13 @@ export const GallerySectionItem = ({
     <div className={cx(styles.item, className)}>
       <div className={styles.content}>
         <div className={styles.image}>
-          <Image src={img} alt={`${title} - Galeria`} objectFit="cover" layout="fill" />
+          <Image
+            src={img}
+            alt={`${title} - Galeria`}
+            objectFit="cover"
+            layout="responsive"
+            sizes="(max-width: 767px) 100vw, 50vw"
+          />
         </div>
         <Link href={href} passHref>
           <div className={styles.overlay}>
