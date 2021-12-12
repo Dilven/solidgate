@@ -45,7 +45,7 @@ yarn dev
 - Lighthouse - reduce unused JavaScript
 - display independently the gallery image number (title) and alt
 - hotjar?
-
+- announcement facebook/olx/sprzedajemy.pl and others
 ## Contributors ✨
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
