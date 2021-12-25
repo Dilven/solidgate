@@ -24,8 +24,6 @@ yarn dev
 
 ## TODO
 
-- remove dangerouslySetAllPagesToNoFollow, dangerouslySetAllPagesToNoIndex, dangerouslyDisableGooglebot
-
 - google analytics
 - google map
 - contact form

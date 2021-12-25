@@ -22,10 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <DefaultSeo
         title={meta.title}
         noindex={false}
-        // TODO
-        dangerouslySetAllPagesToNoFollow
-        dangerouslySetAllPagesToNoIndex
-        dangerouslyDisableGooglebot
         description={meta.description}
         openGraph={{
           type: "website",
