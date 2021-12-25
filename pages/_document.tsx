@@ -8,7 +8,7 @@ class MyDocument extends Document {
       <Html lang="pl">
         <Head>
           <script
-            defer
+            async
             src={`https://www.googletagmanager.com/gtag/js?id=${getConfig(
               "NEXT_PUBLIC_GOOGLE_ANALYTICS"
             )}`}
