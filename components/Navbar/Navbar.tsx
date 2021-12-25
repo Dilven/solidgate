@@ -10,7 +10,7 @@ export const navigationLinks = [
   { name: "O firmie", path: paths.solidgate },
   { name: "Galeria", path: paths.galeria },
   { name: "Kontakt", path: paths.kontakt },
-  { name: "Blog", path: paths.blog },
+  // { name: "Blog", path: paths.blog },
 ];
 
 export const Navbar = () => {

@@ -1,4 +1,4 @@
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
+import type { InferGetStaticPropsType } from "next";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import banner from "../../public/main-banner.jpg";
