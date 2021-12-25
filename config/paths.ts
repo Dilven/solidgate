@@ -7,7 +7,4 @@ export const paths = {
   galeria: "/galeria",
   kontakt: "/kontakt",
   blog: "/blog",
-  api: {
-    items: "/api/items",
-  },
 };

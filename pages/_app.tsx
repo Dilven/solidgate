@@ -1,8 +1,6 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
-import { defaultOptions } from "@/config/cache";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import { getConfig } from "@/config/config";
@@ -10,8 +8,6 @@ import { useRouter } from "next/dist/client/router";
 import { meta } from "@/helpers/metadata";
 import { Maintance } from "@/components/Maintance/Maintance";
 import { pageview } from "@/helpers/analytics";
-
-const queryClient = new QueryClient({ defaultOptions });
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { asPath, events } = useRouter();
@@ -22,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [events]);
 
   return (
-    <QueryClientProvider client={queryClient}>
+    <>
       <DefaultSeo
         title={meta.title}
         noindex={false}
@@ -56,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Maintance>
         <Component {...pageProps} />
       </Maintance>
-    </QueryClientProvider>
+    </>
   );
 }
 
