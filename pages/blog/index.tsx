@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import banner from "../../public/main-banner.jpg";
-import { pageTitles } from "@/helpers/metadata";
+import { pageTitles, shortPageTitle } from "@/helpers/metadata";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -21,7 +21,11 @@ export type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const Page = ({ posts }: Props) => {
   return (
-    <Layout title={pageTitles.blog} banner={banner}>
+    <Layout
+      title={pageTitles.blog}
+      banner={banner}
+      shortTitle={shortPageTitle.blog}
+    >
       <div>
         <div className="posts">
           {posts.map((post, index) => (

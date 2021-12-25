@@ -8,7 +8,7 @@ export const meta = {
 export const titleTemplate = `%s | ${meta.title}`;
 
 export const pageTitles = {
-  solidgate: "Solidgate",
+  solidgate: "O firmie",
   balustrady: "Galeria - Balustrady",
   balustradySchodowe: "Galeria - Balustrady schodowe",
   bramyIFurtki: "Galeria - Furtki i bramy",
@@ -16,4 +16,15 @@ export const pageTitles = {
   galeria: "Galeria",
   kontakt: "Kontakt",
   blog: "Blog - ogrodzenia, bramy i furtki",
+};
+
+export const shortPageTitle = {
+  solidgate: "Solidgate",
+  balustrady: "Balustrady",
+  balustradySchodowe: "Balustrady schodowe",
+  bramyIFurtki: "Furtki i bramy",
+  ogrodzenia: "Ogrodzenia",
+  galeria: "Galeria",
+  kontakt: "Kontakt",
+  blog: "Blog",
 };

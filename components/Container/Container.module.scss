@@ -1,4 +1,4 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 $lg-padding: 15px;
 
@@ -20,4 +20,3 @@ $lg-padding: 15px;
     width: $breakpoint-lg - 2 * $lg-padding;
   }
 }
-

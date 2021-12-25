@@ -3,9 +3,9 @@ import React from "react";
 import { NavLink } from "../Navlink/Navlink";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
-import { useRouter }  from 'next/router'
+import { useRouter } from "next/router";
 import { Container } from "../Container/Container";
- 
+
 export const navigationLinks = [
   { name: "O firmie", path: paths.solidgate },
   { name: "Galeria", path: paths.galeria },
@@ -24,7 +24,12 @@ export const Navbar = () => {
         </Link>
         <ul className={styles.list}>
           {navigationLinks.map(({ name, path }) => (
-            <NavLink key={name} linkClassName={styles.link} path={path} isActive={router.pathname == path}>
+            <NavLink
+              key={name}
+              linkClassName={styles.link}
+              path={path}
+              isActive={router.pathname == path}
+            >
               {name}
             </NavLink>
           ))}
@@ -32,4 +37,4 @@ export const Navbar = () => {
       </Container>
     </nav>
   );
-}
+};

@@ -9,6 +9,7 @@ import styles from "./Layout.module.scss";
 interface Props {
   readonly children: ReactNode;
   readonly title: string;
+  readonly shortTitle?: string;
   readonly titleTemplate?: string;
   readonly banner: StaticImageData;
 }
@@ -16,12 +17,11 @@ interface Props {
 export const Layout = ({
   children,
   title: providedTitle,
-  titleTemplate,
+  shortTitle,
+  titleTemplate = "Solidgate - %s",
   banner,
 }: Props) => {
-  const title = titleTemplate
-    ? titleTemplate.replace("%s", providedTitle)
-    : providedTitle;
+  const title = titleTemplate.replace("%s", providedTitle);
   return (
     <div className={styles.wrapper}>
       <NextSeo
@@ -30,7 +30,7 @@ export const Layout = ({
           title,
         }}
       />
-      <Header banner={banner} title={title} />
+      <Header banner={banner} title={title} shortTitle={shortTitle} />
       <main className={styles.main}>
         <Container>
           <h1>{title}</h1>

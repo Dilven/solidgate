@@ -15,7 +15,11 @@ export const Footer = () => {
           </div>
           <ul className={styles.navigation}>
             {navigationLinks.map(({ name, path }) => (
-              <NavLink key={name} path={path} linkClassName={styles["navigation-link"]}>
+              <NavLink
+                key={name}
+                path={path}
+                linkClassName={styles["navigation-link"]}
+              >
                 {name}
               </NavLink>
             ))}

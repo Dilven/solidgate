@@ -1,8 +1,8 @@
-import {useEffect, useRef} from 'react';
-import {Loader} from '@googlemaps/js-api-loader';
+import { useEffect, useRef } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
 import { getConfig } from "@/config/config";
 import { getQueryParams } from "@/helpers/get-query-params";
-import { mapStyles } from './mapStyles';
+import { mapStyles } from "./mapStyles";
 import styles from "./GoogleMap.module.scss";
 
 const query = getQueryParams({
@@ -16,31 +16,30 @@ interface Props {
 }
 
 export const GoogleMap = ({ onMarkerPress }: Props) => {
-  const mapRef = useRef(null);  useEffect(() => {
+  const mapRef = useRef(null);
+  useEffect(() => {
     const loader = new Loader({
       apiKey: getConfig("NEXT_PUBLIC_GOOGLE_MAPS_API_KEY"),
-      version: 'weekly',
+      version: "weekly",
     });
 
     loader.load().then((google) => {
       const map = new google.maps.Map(mapRef.current, {
-        center: {lat: 51.144349, lng: 18.6132 },
+        center: { lat: 51.144349, lng: 18.6132 },
         zoom: 12,
-        styles: mapStyles
+        styles: mapStyles,
       });
 
       const marker = new google.maps.Marker({
-        position: {lat: 51.144349, lng: 18.6132 },
-        map
+        position: { lat: 51.144349, lng: 18.6132 },
+        map,
       });
 
       marker.setMap(map);
 
-      google.maps.event.addListener(marker, 'click', onMarkerPress);
+      google.maps.event.addListener(marker, "click", onMarkerPress);
     });
   });
 
-  return (
-    <div id="map" ref={mapRef} className={styles.container} />
-  );
-}
+  return <div id="map" ref={mapRef} className={styles.container} />;
+};

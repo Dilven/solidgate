@@ -16,7 +16,7 @@
       }
 
       a {
-        transition-delay: .2s;
+        transition-delay: 0.2s;
         transform: translatey(0);
         opacity: 1;
       }
@@ -55,10 +55,10 @@
   top: 0;
   left: 0;
   opacity: 0;
-  background-color: rgba(0,0,0,0.5);
-  -o-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   h2 {
     transform: translatey(-100px);
@@ -67,15 +67,15 @@
     text-align: center;
     position: relative;
     font-size: 17px;
-    background: rgba(0,0,0,0.6);
-    transition: all .2s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
     padding: 10px;
   }
 
   a {
     display: inline-flex;
     opacity: 0;
-    transition: translatey .2s ease-in-out;
+    transition: translatey 0.2s ease-in-out;
     transition-delay: 0s;
     margin: 50px 0 0;
   }

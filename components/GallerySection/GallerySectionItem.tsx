@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cx from 'classnames';
+import cx from "classnames";
 import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
@@ -17,7 +17,7 @@ export const GallerySectionItem = ({
   description,
   img,
   href,
-  className
+  className,
 }: Props) => {
   return (
     <div className={cx(styles.item, className)}>
@@ -34,7 +34,9 @@ export const GallerySectionItem = ({
         <Link href={href} passHref>
           <div className={styles.overlay}>
             <h2>{title}</h2>
-            <ButtonLink inverted href={href}>Galeria</ButtonLink>
+            <ButtonLink inverted href={href}>
+              Galeria
+            </ButtonLink>
           </div>
         </Link>
       </div>

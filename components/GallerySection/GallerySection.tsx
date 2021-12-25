@@ -2,8 +2,8 @@ import styles from "./GallerySection.module.scss";
 import { GallerySectionItem } from "./GallerySectionItem";
 import balustradesGalleryImage from "../../public/gallery/gallery-balustrades.jpg";
 import fencesGalleryImage from "../../public/gallery/gallery-fences.jpg";
-import wicketsGalleryImage from "../../public/gallery/gallery-wickets.jpg"
-import staircaseRailingsGalleryImage from "../../public/gallery/gallery-staircase-railings.jpg"
+import wicketsGalleryImage from "../../public/gallery/gallery-wickets.jpg";
+import staircaseRailingsGalleryImage from "../../public/gallery/gallery-staircase-railings.jpg";
 import { paths } from "@/config/paths";
 import { Section } from "@/components/Section/Section";
 
@@ -13,7 +13,7 @@ const items = [
     description: "Szeroki wybór balustrad od klasycznych do nowoczesnych.",
     img: balustradesGalleryImage,
     href: paths.balustrady,
-    className: styles.balustrades
+    className: styles.balustrades,
   },
   {
     title: "Balustrady schodowe",
@@ -21,7 +21,7 @@ const items = [
       "Szeroki wybór bram i furtek. Posiadamy w ofercie bramy 2-skrzydłowe jak i przesuwne w wielu wzorach.",
     img: staircaseRailingsGalleryImage,
     href: paths.balustradySchodowe,
-    className: styles['staircase-railings']
+    className: styles["staircase-railings"],
   },
   {
     title: "Furtki i bramy",
@@ -29,7 +29,7 @@ const items = [
       "Aby sprostać oczekiwaniom współczesnych klientów, posiadamy spory wybór wzorów balustrad schodowych",
     img: wicketsGalleryImage,
     href: paths.bramyIFurtki,
-    className: styles.wickets
+    className: styles.wickets,
   },
   {
     title: "Ogrodzenia",
@@ -37,7 +37,7 @@ const items = [
       "Dobrze wybrane ogrodzenie wraz z bramą i furtką tworzą piękną wizytówke naszego domu.",
     img: fencesGalleryImage,
     href: paths.ogrodzenia,
-    className: styles.fences
+    className: styles.fences,
   },
 ];
 export const GallerySection = () => {

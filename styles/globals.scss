@@ -1,4 +1,4 @@
-@import 'mixins';
+@import "mixins";
 
 :root {
   --brand-color-main: #051622;
@@ -19,9 +19,10 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  font-family: PlayfairDisplay, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: var(--font-primary)
+  font-family: PlayfairDisplay, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  color: var(--font-primary);
 }
 
 a {

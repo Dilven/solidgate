@@ -5,10 +5,15 @@ import { Layout } from "@/components/Layout/Layout";
 import { Separator } from "@/components/Separator/Separator";
 import { GallerySection } from "@/components/GallerySection/GallerySection";
 import { Section } from "@/components/Section/Section";
+import { pageTitles, shortPageTitle } from "@/helpers/metadata";
 
 const Home = () => {
   return (
-    <Layout title="O Firmie" titleTemplate="Solidgate - %s" banner={mainBanner}>
+    <Layout
+      title={pageTitles.solidgate}
+      banner={mainBanner}
+      shortTitle={shortPageTitle.solidgate}
+    >
       <Section label="Firma z tradycjami">
         <p>
           Solidgate działa na rynku już od ponad 15 lat. Wykonujemy oraz
@@ -44,7 +49,8 @@ const Home = () => {
         </p>
         <p>
           Zapraszamy serdecznie do zapoznania się z naszą ofertą a także do
-          kontaktu telefonicznego lub mailowego. Odpowiemy na każde Państwa pytanie.
+          kontaktu telefonicznego lub mailowego. Odpowiemy na każde Państwa
+          pytanie.
         </p>
       </Section>
       <Separator />

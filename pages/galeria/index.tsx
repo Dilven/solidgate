@@ -6,11 +6,15 @@ import { Separator } from "@/components/Separator/Separator";
 import { GallerySection } from "@/components/GallerySection/GallerySection";
 import Link from "next/link";
 import { paths } from "@/config/paths";
-import { pageTitles } from "@/helpers/metadata";
+import { pageTitles, shortPageTitle } from "@/helpers/metadata";
 
 const Gallery = () => {
   return (
-    <Layout title={pageTitles.galeria} banner={galeriaBanner}>
+    <Layout
+      title={pageTitles.galeria}
+      shortTitle={shortPageTitle.galeria}
+      banner={galeriaBanner}
+    >
       <p>
         Nasza siedziba znajduje się w miejscowości Pątnów koło miasta Wieluń,
         ale nie trzeba do nas przychodzić osobiście aby obejrzeć nasze prace. W

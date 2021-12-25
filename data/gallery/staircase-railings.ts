@@ -45,5 +45,5 @@ export const images = [
   { src: image20, title: "20" },
   { src: image21, title: "21" },
   { src: image22, title: "22" },
-  { src: image23, title: "23" }
+  { src: image23, title: "23" },
 ];
