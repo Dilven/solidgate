@@ -44,7 +44,7 @@ module.exports = withPWA({
           permanent: true,
         },
         {
-          source: "galeria-ogrodzenia-balustrady/balustrady-kute-wielun",
+          source: "/galeria-ogrodzenia-balustrady/balustrady-kute-wielun",
           destination: "/galeria/balustrady",
           permanent: true,
         },
