@@ -29,6 +29,11 @@ module.exports = withPWA({
     async redirects() {
       return [
         {
+          source: "/galeria-ogrodzenia-balustrady",
+          destination: "/galeria",
+          permanent: true,
+        },
+        {
           source: "/galeria-ogrodzenia-balustrady/ogrodzenia-wielun",
           destination: "/galeria/ogrodzenia",
           permanent: true,
