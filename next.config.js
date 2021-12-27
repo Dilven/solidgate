@@ -40,7 +40,7 @@ module.exports = withPWA({
         },
         {
           source:
-            "https://www.solidgate.pl/galeria-ogrodzenia-balustrady/brama-kuta-furtka",
+            "/galeria-ogrodzenia-balustrady/brama-kuta-furtka",
           destination: "/galeria/bramy-furtki",
           permanent: true,
         },
