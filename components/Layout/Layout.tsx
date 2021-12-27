@@ -11,7 +11,7 @@ interface Props {
   readonly title: string;
   readonly shortTitle?: string;
   readonly titleTemplate?: string;
-  readonly banner: StaticImageData;
+  readonly banner?: StaticImageData;
 }
 
 export const Layout = ({
