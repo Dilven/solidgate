@@ -39,8 +39,7 @@ module.exports = withPWA({
           permanent: true,
         },
         {
-          source:
-            "/galeria-ogrodzenia-balustrady/brama-kuta-furtka",
+          source: "/galeria-ogrodzenia-balustrady/brama-kuta-furtka",
           destination: "/galeria/bramy-furtki",
           permanent: true,
         },
