@@ -1,6 +1,6 @@
 ---
 title: "6 Korzyści z kutego ogrodzenia dla Twojego domu?"
-date: "March 7, 2021"
+date: "Marzec 23, 2022"
 excerpt: "W tym poscie spojrzymy szerzej na kute ogrodzenie. Dowiemy się dlaczego tak często są wybierane jako ogrodzenie dla naszego domu"
 ---
 
@@ -19,7 +19,7 @@ W przeciwieństwie do innych materiałów ogrodzeniowych, kute żelazo jest mnie
 
 Konserwacja jest również bardzo łatwa, ponieważ większość ogrodzeń z kutego żelaza w dzisiejszych czasach jest poddawana obróbce, więc niektóre z nich będą wymagały jedynie regularnego wycierania lub spłukiwania wężem, aby utrzymać ich najlepszy wygląd.
 
-### Jest bezpieczny
+### Jest bezpieczne
 
 Jedną z innych zalet kutego żelaza jest poziom bezpieczeństwa, jaki oferuje. Zabezpieczone w ziemi ogrodzenia z kutego żelaza są mało prawdopodobne, aby zostały złamane, przecięte lub rozerwane. Są one również w stanie wytrzymać nacisk fizyczny bez przewracania się, dlatego idealnie nadają się do trzymania zwierząt i dużych szkodników z dala od ogrodu. Jeśli Twoje ogrodzenie zawiera dodatkowe elementy, takie jak ozdobne włócznie lub kolce, to możesz również zagwarantować, że będziesz zniechęcać intruzów do wspinania się po ogrodzeniu na Twoją posesję!
 Ogrodzenia z kutego żelaza mogą zapewniają też bezpieczeństwo naszym pociechom zwłaszcza jeśli wybierzesz styl, który zabrania im skakać lub wspinać się po ogrodzeniu, lub wślizgiwać się między zbyt szeroko rozstawionymi prętami.
