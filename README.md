@@ -1,6 +1,6 @@
 ## About
 
-Website created for my dad's company
+[Website](https://solidgate.pl/) created for my dad's company by me and my [brother](https://github.com/kamilmateusiak) 
 
 ## Getting Started
 
@@ -24,8 +24,6 @@ yarn dev
 
 ## TODO
 
-- google analytics
-- google map
 - contact form
 - webvitals
 - improve pwa
@@ -38,7 +36,6 @@ yarn dev
 - fonts in woff2
 - font subset
 - variable fonts (@font face)
-- add images to galleries and generate thumbnails
 - add service worker with cache to make it PWA
 - Lighthouse - reduce unused JavaScript
 - display independently the gallery image number (title) and alt
