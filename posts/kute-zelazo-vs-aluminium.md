@@ -11,7 +11,7 @@ W tym artykule przyjrzymy się niektórym zaletom kutego żelaza i aluminium - d
 
 Zarówno ogrodzenia aluminiowe, jak i żelazne są trwałe, jednak kute żelazo zdecydowanie wygrywa w tej dziedzinie. To dlatego często nazywa się je "ogrodzeniami stuletnimi"! Porównując oba rodzaje ogrodzeń, aluminium można łatwiej wygiąć i uszkodzić, natomiast wytrzymałość kutego żelaza oznacza, że może ono wytrzymać cieższe warunki fizyczne - w tym silne wiatry i upadające drzewa - bez konieczności naprawy lub wymiany.
 
-Powłoki ochronne i mocny rdzeń ogrodzenia z kutego żelaza oznaczają również, że materiał nie  koroduje, co daje gwarancję, że ogrodzenie będzie służyć przez dziesiątki lat, a nawet całe życie!
+Powłoki ochronne i mocny rdzeń ogrodzenia z kutego żelaza oznaczają również, że materiał nie koroduje, co daje gwarancję, że ogrodzenie będzie służyć przez dziesiątki lat, a nawet całe życie!
 
 ### Bezpieczeństwo
 
