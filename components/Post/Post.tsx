@@ -22,7 +22,7 @@ export const Post = ({ post }: Props) => (
     <h3>{post.frontmatter.title}</h3>
     <p>{post.frontmatter.excerpt}</p>
     <Link href={`${paths.blog}/${post.slug}`} passHref>
-      <a className={styles.readButton}>Read More</a>
+      <a className={styles.readButton}>Czytaj dalej...</a>
     </Link>
   </Section>
 );

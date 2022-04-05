@@ -1,6 +1,6 @@
 ## About
 
-[Website](https://solidgate.pl/) created for my dad's company by me and my [brother](https://github.com/kamilmateusiak) 
+[Website](https://solidgate.pl/) created for my dad's company by me and my [brother](https://github.com/kamilmateusiak)
 
 ## Getting Started
 
