@@ -1,6 +1,8 @@
 ## About
 
 [Website](https://solidgate.pl/) created for my dad's company by me and my [brother](https://github.com/kamilmateusiak)
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/26671751/177957101-097f6074-7a89-44b9-b5a5-08e6bcaed845.png">
+
 
 ## Getting Started
 
