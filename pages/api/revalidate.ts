@@ -1,3 +1,4 @@
+import { logger } from "@/config/logger";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -6,7 +7,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(401).json({ message: "Invalid token" });
   }
 
-  const slug = req.query.slug;
+  const slug = req.body.data.slug;
+  logger.info(`revalidate: ${slug}`);
   if (!slug) return res.status(400).json({ message: "slug is required" });
 
   try {
