@@ -7,7 +7,7 @@ import { Section } from "../Section/Section";
 
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
-import { StaticImageData } from "next/image";
+import { StaticImageData } from "next/legacy/image";
 
 interface Props {
   readonly images: { src: StaticImageData; title: string }[];

@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import cx from "classnames";
 import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";

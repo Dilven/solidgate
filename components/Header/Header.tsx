@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from "next/legacy/image";
 import { Banner } from "../Banner/Banner";
 import { Navbar } from "../Navbar/Navbar";
 import styles from "./Header.module.scss";

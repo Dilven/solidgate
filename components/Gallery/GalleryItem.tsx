@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import styles from "./GalleryItem.module.scss";
 
 interface Props {
