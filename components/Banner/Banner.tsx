@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./Banner.module.scss";
 interface Props {
   readonly src: StaticImageData;

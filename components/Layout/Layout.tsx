@@ -1,4 +1,5 @@
 import { NextSeo } from "next-seo";
+import { StaticImageData } from "next/image";
 import React, { ReactNode } from "react";
 import { Container } from "../Container/Container";
 import { CookiesPopup } from "../CookiesPopup/CookiesPopup";

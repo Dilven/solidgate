@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
-import { getConfig } from "@/config/config";
 import { useRouter } from "next/dist/client/router";
 import { meta } from "@/helpers/metadata";
 import { Maintance } from "@/components/Maintance/Maintance";
@@ -21,17 +20,16 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo
         title={meta.title}
-        noindex={false}
         description={meta.description}
         openGraph={{
           type: "website",
           title: meta.title,
           locale: "pl_PL",
-          url: `https://${getConfig("NEXT_PUBLIC_URL")}${asPath}`,
+          url: `https://${process.env.NEXT_PUBLIC_URL}${asPath}`,
           description: meta.description,
           images: [
             {
-              url: `https://${getConfig("NEXT_PUBLIC_URL")}/logo.png`,
+              url: `https://${process.env.NEXT_PUBLIC_URL}/logo.png`,
               width: 1000,
               height: 1000,
             },
