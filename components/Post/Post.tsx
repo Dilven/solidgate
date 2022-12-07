@@ -24,7 +24,8 @@ export const Post = ({ post }: Props) => (
     <Link
       href={`${paths.blog}/${post.slug}`}
       passHref
-      className={styles.readButton}>
+      className={styles.readButton}
+    >
       Czytaj dalej...
     </Link>
   </Section>

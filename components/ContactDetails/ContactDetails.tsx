@@ -29,9 +29,7 @@ export const ContactDetails = () => {
       </ContactItem>
       <ContactItem name="tel">
         <Link href="callto://+607942224" passHref className={styles.phone}>
-          
-            607942224
-          
+          607942224
         </Link>
       </ContactItem>
     </ul>

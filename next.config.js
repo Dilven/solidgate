@@ -1,7 +1,7 @@
-const prod = process.env.NODE_ENV === 'production'
+const prod = process.env.NODE_ENV === "production";
 const withPWA = require("next-pwa")({
   dest: "public",
-  disable: !prod
+  disable: !prod,
 });
 
 /** @type {import('next').NextConfig} */
@@ -40,4 +40,4 @@ module.exports = withPWA({
       },
     ];
   },
-})
+});

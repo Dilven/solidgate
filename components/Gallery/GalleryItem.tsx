@@ -15,9 +15,10 @@ export const GalleryItem = ({ source, title }: Props) => {
         sizes="(max-width: 767px) 30vw, (max-width: 1200px) 25vw, 17vw"
         style={{
           width: "100%",
-          height: "auto",
-          objectFit: "cover"
-        }} />
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
     </a>
   );
 };

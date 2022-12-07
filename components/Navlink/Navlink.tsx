@@ -22,10 +22,9 @@ export const NavLink = ({
     <Link
       href={path}
       passHref
-      className={cx(styles.link, isActive && styles.active, linkClassName)}>
-
+      className={cx(styles.link, isActive && styles.active, linkClassName)}
+    >
       {children}
-
     </Link>
   </li>
 );

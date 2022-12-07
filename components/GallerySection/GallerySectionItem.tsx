@@ -30,8 +30,9 @@ export const GallerySectionItem = ({
             style={{
               width: "100%",
               height: "auto",
-              objectFit: "cover"
-            }} />
+              objectFit: "cover",
+            }}
+          />
         </div>
         <Link href={href} passHref legacyBehavior>
           <div className={styles.overlay}>

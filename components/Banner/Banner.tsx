@@ -16,8 +16,9 @@ export const Banner = ({ src, title }: Props) => {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
-        }} />
+          objectFit: "cover",
+        }}
+      />
       <span className={styles.title}>{title}</span>
     </div>
   );
