@@ -19,8 +19,8 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <Container className={styles.container}>
-        <Link href="/" passHref>
-          <a className={styles.brand}>Solidgate</a>
+        <Link href="/" passHref className={styles.brand}>
+          Solidgate
         </Link>
         <ul className={styles.list}>
           {navigationLinks.map(({ name, path }) => (

@@ -21,8 +21,11 @@ export const Post = ({ post }: Props) => (
     </span>
     <h3>{post.frontmatter.title}</h3>
     <p>{post.frontmatter.excerpt}</p>
-    <Link href={`${paths.blog}/${post.slug}`} passHref>
-      <a className={styles.readButton}>Czytaj dalej...</a>
+    <Link
+      href={`${paths.blog}/${post.slug}`}
+      passHref
+      className={styles.readButton}>
+      Czytaj dalej...
     </Link>
   </Section>
 );

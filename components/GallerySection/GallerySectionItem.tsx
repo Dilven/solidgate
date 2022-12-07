@@ -31,7 +31,7 @@ export const GallerySectionItem = ({
             sizes="(max-width: 767px) 100vw, 50vw"
           />
         </div>
-        <Link href={href} passHref>
+        <Link href={href} passHref legacyBehavior>
           <div className={styles.overlay}>
             <h2>{title}</h2>
             <ButtonLink inverted href={href}>

@@ -19,10 +19,13 @@ export const NavLink = ({
   isActive,
 }: Props) => (
   <li className={cx(styles.item, className)}>
-    <Link href={path} passHref>
-      <a className={cx(styles.link, isActive && styles.active, linkClassName)}>
-        {children}
-      </a>
+    <Link
+      href={path}
+      passHref
+      className={cx(styles.link, isActive && styles.active, linkClassName)}>
+
+      {children}
+
     </Link>
   </li>
 );

@@ -16,8 +16,8 @@ const Page = ({ frontmatter: { title, date, cover_image }, content }: any) => {
     <Layout title={title} banner={banner}>
       <Section label={`Blog post - ${title}`} className={styles.post}>
         <>
-          <Link href={paths.blog}>
-            <a className={styles.back}>Go Back</a>
+          <Link href={paths.blog} className={styles.back}>
+            Go Back
           </Link>
           <div className="card card-page">
             <div className="post-date">Posted on {date}</div>
