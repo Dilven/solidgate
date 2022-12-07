@@ -1,21 +1,11 @@
-import type { InferGetStaticPropsType } from "next";
+import type { GetStaticPropsResult, InferGetStaticPropsType } from "next";
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import banner from "../../public/main-banner.jpg";
 import { pageTitles, shortPageTitle } from "@/helpers/metadata";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import { Post } from "@/components/Post/Post";
-
-export const sortByDate = (a: Frontmatter, b: Frontmatter) => {
-  return (
-    new Date(b.frontmatter.date).getTime() -
-    new Date(a.frontmatter.date).getTime()
-  );
-};
-
-type Frontmatter = { frontmatter: { date: number } };
+import { hygraphService } from "@/services/hygraph";
+import { PostModel } from "@/models/post";
 
 export type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -40,23 +30,11 @@ const Page = ({ posts }: Props) => {
 export default Page;
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join("posts"));
-  const posts: any[] = files.map((filename) => {
-    const slug = filename.replace(".md", "");
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf-8"
-    );
-    const { data: frontmatter } = matter(markdownWithMeta);
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  return {
+  const posts = await hygraphService.getPosts();
+  const result = {
     props: {
-      posts: posts.sort(sortByDate),
+      posts,
     },
-  };
+  } satisfies GetStaticPropsResult<{ posts: PostModel[] }>;
+  return result;
 };

@@ -1,17 +1,24 @@
 import React from "react";
 import { Layout } from "@/components/Layout/Layout";
 import banner from "../../public/main-banner.jpg";
-import { pageTitles } from "@/helpers/metadata";
 import { Section } from "@/components/Section/Section";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import * as marked from "marked";
 import Link from "next/link";
 import { paths } from "@/config/paths";
 import styles from "./[slug].module.scss";
+import { hygraphService } from "@/services/hygraph";
+import {
+  GetStaticPaths,
+  GetStaticPathsResult,
+  GetStaticPropsResult,
+  InferGetStaticPropsType,
+} from "next";
+import { PostModel } from "@/models/post";
+import { displayDate } from "@/helpers/date";
 
-const Page = ({ frontmatter: { title, date, cover_image }, content }: any) => {
+export type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+const Page = ({ post: { title, content, publishedAt } }: Props) => {
   return (
     <Layout title={title} banner={banner}>
       <Section label={`Blog post - ${title}`} className={styles.post}>
@@ -20,7 +27,9 @@ const Page = ({ frontmatter: { title, date, cover_image }, content }: any) => {
             Go Back
           </Link>
           <div className="card card-page">
-            <div className="post-date">Posted on {date}</div>
+            <div className="post-date">
+              Posted on {displayDate(publishedAt)}
+            </div>
             <div className="post-body">
               <div
                 dangerouslySetInnerHTML={{ __html: marked.marked(content) }}
@@ -38,34 +47,30 @@ export default Page;
 interface Context {
   params: { readonly slug: string };
 }
+
 export const getStaticProps = async ({ params: { slug } }: Context) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  return {
+  const post = await hygraphService.getPost(slug);
+  if (!post) return { notFound: true };
+  const result = {
     props: {
-      frontmatter,
-      slug,
-      content,
+      post,
     },
-  };
+  } satisfies GetStaticPropsResult<{ post: PostModel }>;
+  return result;
 };
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join("posts"));
+  const posts = await hygraphService.getPosts();
 
-  const paths = files.map((filename) => ({
+  const paths = posts.map(({ slug }) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug,
     },
   }));
 
-  return {
+  const result = {
     paths,
     fallback: false,
-  };
+  } satisfies GetStaticPathsResult<{ slug: string }>;
+  return result;
 };

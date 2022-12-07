@@ -1,9 +1,7 @@
 export type PostModel = {
-  frontmatter: {
-    cover_image: string;
-    title: string;
-    excerpt: string;
-    date: string;
-  };
+  id: string;
+  title: string;
+  content: string;
   slug: string;
+  publishedAt: string;
 };
