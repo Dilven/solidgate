@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import cx from "classnames";
 import styles from "./GallerySectionItem.module.scss";
 import Link from "next/link";
@@ -26,10 +26,12 @@ export const GallerySectionItem = ({
           <Image
             src={img}
             alt={`${title} - Galeria`}
-            objectFit="cover"
-            layout="responsive"
             sizes="(max-width: 767px) 100vw, 50vw"
-          />
+            style={{
+              width: "100%",
+              height: "auto",
+              objectFit: "cover"
+            }} />
         </div>
         <Link href={href} passHref legacyBehavior>
           <div className={styles.overlay}>

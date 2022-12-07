@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./GalleryItem.module.scss";
 
 interface Props {
@@ -13,9 +13,11 @@ export const GalleryItem = ({ source, title }: Props) => {
         src={source}
         alt={title}
         sizes="(max-width: 767px) 30vw, (max-width: 1200px) 25vw, 17vw"
-        objectFit="cover"
-        layout="responsive"
-      />
+        style={{
+          width: "100%",
+          height: "auto",
+          objectFit: "cover"
+        }} />
     </a>
   );
 };
