@@ -21,7 +21,6 @@ const client = new GraphQLClient(url, {
 
 export const hygraphService = Object.freeze({
   getPosts: async () => {
-    // dodac jeszcze incremental pobieranie
     const query = gql`
       {
         posts(stage: PUBLISHED, orderBy: publishedAt_ASC) {
