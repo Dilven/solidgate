@@ -14,7 +14,7 @@ export const Post = ({ post }: Props) => (
   <Section label={`Czytaj więcej o - ${post.title}`} className={styles.post}>
     {/* <Image src={post.frontmatter.cover_image} alt='' /> */}
     <span>
-      Posted on{" "}
+      Opublikowano:{" "}
       <time dateTime={post.publishedAt}>{displayDate(post.publishedAt)}</time>
     </span>
     <h3>{post.title}</h3>

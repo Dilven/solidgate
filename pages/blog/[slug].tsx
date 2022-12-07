@@ -24,11 +24,11 @@ const Page = ({ post: { title, content, publishedAt } }: Props) => {
       <Section label={`Blog post - ${title}`} className={styles.post}>
         <>
           <Link href={paths.blog} className={styles.back}>
-            Go Back
+            Cofnij
           </Link>
           <div className="card card-page">
             <div className="post-date">
-              Posted on {displayDate(publishedAt)}
+              Opoublikowano: {displayDate(publishedAt)}
             </div>
             <div className="post-body">
               <div
