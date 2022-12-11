@@ -25,23 +25,16 @@ yarn dev
 
 ## TODO
 
-- contact form
-- webvitals
 - improve pwa
 - inspiration page
-- blog
-- fix type for markdown
-- automatically generated marketing content on the website
 - Write unique meta descriptions for each page.
 - more internal and external links
 - fonts in woff2
-- font subset
 - variable fonts (@font face)
 - add service worker with cache to make it PWA
 - Lighthouse - reduce unused JavaScript
 - display independently the gallery image number (title) and alt
 - hotjar?
-- announcement facebook/olx/sprzedajemy.pl and others
 
 ## Contributors ✨
 
