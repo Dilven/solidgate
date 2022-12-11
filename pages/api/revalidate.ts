@@ -7,8 +7,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(401).json({ message: "Invalid token" });
   }
 
+  if (!req.body) {
+    return res.status(422).json({ message: "Invalid request body" });
+  }
   const slug = req.body.data.slug;
-  logger.info(`revalidate: ${slug}`);
+  logger.info(`revalidate body: ${JSON.stringify(req.body)}`);
+
   if (!slug) return res.status(400).json({ message: "slug is required" });
 
   try {
