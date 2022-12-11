@@ -1,4 +1,3 @@
-import { getConfig } from "@/config/config";
 import { meta } from "@/helpers/metadata";
 import Document, { Html, Main, NextScript, Head } from "next/document";
 
@@ -9,9 +8,7 @@ class MyDocument extends Document {
         <Head>
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${getConfig(
-              "NEXT_PUBLIC_GOOGLE_ANALYTICS"
-            )}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -19,7 +16,7 @@ class MyDocument extends Document {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${getConfig("NEXT_PUBLIC_GOOGLE_ANALYTICS")}', {
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
           `,

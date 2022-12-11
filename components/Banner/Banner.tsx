@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./Banner.module.scss";
 interface Props {
   readonly src: StaticImageData;
@@ -13,8 +13,10 @@ export const Banner = ({ src, title }: Props) => {
         alt={`${title} - banner`}
         priority
         placeholder="blur"
-        objectFit="cover"
-        layout="fill"
+        fill
+        style={{
+          objectFit: "cover",
+        }}
       />
       <span className={styles.title}>{title}</span>
     </div>

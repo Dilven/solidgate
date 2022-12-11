@@ -8,14 +8,10 @@ interface Props
   inverted?: boolean;
 }
 
-export const ButtonLink = (props: Props) => (
+export const ButtonLink = ({ inverted, ...props }: Props) => (
   <a
     {...props}
-    className={cx(
-      styles.button,
-      props.inverted && styles.inverted,
-      props.className
-    )}
+    className={cx(styles.button, inverted && styles.inverted, props.className)}
     tabIndex={0}
   >
     <svg>

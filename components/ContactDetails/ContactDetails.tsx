@@ -23,15 +23,13 @@ export const ContactDetails = () => {
       <ContactItem>98-335 Pątnów</ContactItem>
       <ContactItem>Zenon Mateusiak</ContactItem>
       <ContactItem name="mail">
-        <Link href="mailto:biuro@solidgate.pl" passHref>
-          <a className={styles.mail}>biuro@solidgate.pl</a>
+        <Link href="mailto:biuro@solidgate.pl" passHref className={styles.mail}>
+          biuro@solidgate.pl
         </Link>
       </ContactItem>
       <ContactItem name="tel">
-        <Link href="callto://+607942224" passHref>
-          <a className={styles.phone} href="callto://+607942224">
-            607942224
-          </a>
+        <Link href="callto://+607942224" passHref className={styles.phone}>
+          607942224
         </Link>
       </ContactItem>
     </ul>

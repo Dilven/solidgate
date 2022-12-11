@@ -1,8 +1,11 @@
-import { getConfig } from "@/config/config";
-
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+const googleAnalyticsTarget = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
+
+if (!googleAnalyticsTarget) {
+  throw new Error("googleAnalyticsTarget does not exist");
+}
 export const pageview = (url: string) => {
-  window.gtag("config", getConfig("NEXT_PUBLIC_GOOGLE_ANALYTICS") || "", {
+  window.gtag("config", googleAnalyticsTarget, {
     page_path: url,
   });
 };
