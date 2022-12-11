@@ -1,6 +1,8 @@
 import Pino from "pino";
 
-export const logger = Pino({
-  prettyPrint: { colorize: true, translateTime: true },
-  level: "trace",
+const transport = Pino.transport({
+  target: "pino-pretty",
+  options: { colorize: true },
 });
+
+const logger = Pino({ level: "trace" }, transport);
