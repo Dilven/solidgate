@@ -5,4 +5,4 @@ const transport = Pino.transport({
   options: { colorize: true },
 });
 
-const logger = Pino({ level: "trace" }, transport);
+export const logger = Pino({ level: "trace" }, transport);
