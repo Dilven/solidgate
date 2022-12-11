@@ -14,7 +14,6 @@ export const Banner = ({ src, title }: Props) => {
         priority
         placeholder="blur"
         fill
-        sizes="100vw"
         style={{
           objectFit: "cover",
         }}
