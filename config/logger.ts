@@ -1,8 +1,7 @@
-import Pino from "pino";
+import pino from "pino";
+import pretty from "pino-pretty";
 
-const transport = Pino.transport({
-  target: "pino-pretty",
-  options: { colorize: true },
+export const logger = pino({
+  level: "trace",
+  prettifier: pretty,
 });
-
-export const logger = Pino({ level: "trace" }, transport);
