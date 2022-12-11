@@ -17,6 +17,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (!slug) return res.status(400).json({ message: "slug is required" });
 
   try {
+    await res.revalidate(`/blog`);
     await res.revalidate(`/blog/${slug}`);
     return res.json({ revalidated: true });
   } catch (err) {

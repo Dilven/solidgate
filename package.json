@@ -13,9 +13,9 @@
     "static:fix": "npm run lint:fix && npm run format:fix",
     "typing:check": "tsc --noEmit"
   },
-  "engines" : { 
-    "npm" : ">=8.19.2",
-    "node" : ">=18"
+  "engines": {
+    "npm": ">=8.19.2",
+    "node": ">=18"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "1.15.1",
