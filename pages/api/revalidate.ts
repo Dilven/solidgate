@@ -10,8 +10,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (!req.body) {
     return res.status(422).json({ message: "Invalid request body" });
   }
-  const slug = req.body.data.slug;
   logger.info(`revalidate body: ${JSON.stringify(req.body)}`);
+
+  const slug = req.body.data.localizations?.at(0)?.slug;
 
   if (!slug) return res.status(400).json({ message: "slug is required" });
 
