@@ -15,8 +15,10 @@ import {
 } from "next";
 import { PostModel } from "@/models/post";
 import { displayDate } from "@/helpers/date";
+import pThrottle from "p-throttle";
 
 export type Props = InferGetStaticPropsType<typeof getStaticProps>;
+const throttle = pThrottle({ limit: 5, interval: 1000 });
 
 const Page = ({ post: { title, content, publishedAt } }: Props) => {
   return (

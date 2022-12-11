@@ -1,6 +1,9 @@
 import { PostModel } from "@/models/post";
 import { GraphQLClient } from "graphql-request";
 import { gql } from "graphql-request";
+import pThrottle from "p-throttle";
+
+const throttle = pThrottle({ limit: 5, interval: 1000 });
 
 const url = process.env.HYGRAPH_API_URL;
 const token = process.env.HYGRAPH_TOKEN;
@@ -35,7 +38,7 @@ export const hygraphService = Object.freeze({
     const { posts } = await client.request<{ posts: PostModel[] }>(query);
     return posts;
   },
-  getPost: async (slug: string) => {
+  getPost: throttle(async (slug: string) => {
     const query = gql`
       query getPostBySlug($slug: String!) {
         posts(stage: PUBLISHED, where: { slug: $slug }) {
@@ -53,5 +56,5 @@ export const hygraphService = Object.freeze({
       variables
     );
     return posts.at(0);
-  },
+  }),
 });
