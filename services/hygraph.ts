@@ -41,7 +41,7 @@ export const hygraphService = Object.freeze({
   getPost: throttle(async (slug: string) => {
     const query = gql`
       query getPostBySlug($slug: String!) {
-        posts(where: { slug: $slug }) {
+        posts(stage: PUBLISHED, where: { slug: $slug }) {
           id
           content
           title
@@ -55,7 +55,6 @@ export const hygraphService = Object.freeze({
       query,
       variables
     );
-    console.log("🚀 ~ file: hygraph.ts:55 ~ getPost:throttle ~ posts", posts);
     return posts.at(0);
   }),
 });

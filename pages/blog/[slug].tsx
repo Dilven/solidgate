@@ -70,7 +70,7 @@ export const getStaticPaths = async () => {
 
   const result = {
     paths,
-    fallback: false,
+    fallback: 'blocking',
   } satisfies GetStaticPathsResult<{ slug: string }>;
   return result;
 };
