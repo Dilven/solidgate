@@ -11,6 +11,13 @@ module.exports = withPWA({
   images: {
     deviceSizes: [320, 450, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
+  // This setting will force the build to be single-threaded, which limits the speed at which requests are made within the getStaticProps.
+  // As a result, the build runs slower but completes without errors.
+  // https://hygraph.com/docs/api-reference/basics/rate-limits#thread-limiting
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
   async redirects() {
     return [
       {
