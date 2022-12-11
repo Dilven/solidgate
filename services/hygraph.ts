@@ -54,7 +54,8 @@ export const hygraphService = Object.freeze({
     const { posts } = await client.request<{ posts: PostModel[] }>(
       query,
       variables
-    );
+      );
+    console.log("🚀 ~ file: hygraph.ts:55 ~ getPost:throttle ~ posts", posts)
     return posts.at(0);
   }),
 });
