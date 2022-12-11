@@ -14,6 +14,10 @@
     "static:fix": "npm run lint:fix && npm run format:fix",
     "typing:check": "tsc --noEmit"
   },
+  "engines" : { 
+    "npm" : ">=9",
+    "node" : ">=18"
+  },
   "dependencies": {
     "@googlemaps/js-api-loader": "1.15.1",
     "@radix-ui/react-separator": "1.0.1",
