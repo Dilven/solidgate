@@ -15,7 +15,7 @@
     "typing:check": "tsc --noEmit"
   },
   "engines" : { 
-    "npm" : ">=9",
+    "npm" : ">=8.19.2",
     "node" : ">=18"
   },
   "dependencies": {
