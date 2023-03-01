@@ -26,7 +26,7 @@ export const hygraphService = Object.freeze({
   getPosts: async () => {
     const query = gql`
       {
-        posts(stage: PUBLISHED, orderBy: publishedAt_ASC) {
+        posts(stage: PUBLISHED, orderBy: publishedAt_ASC, first: 100) {
           id
           content
           title
