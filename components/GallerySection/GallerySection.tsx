@@ -4,6 +4,7 @@ import balustradesGalleryImage from "../../public/gallery/gallery-balustrades.jp
 import fencesGalleryImage from "../../public/gallery/gallery-fences.jpg";
 import wicketsGalleryImage from "../../public/gallery/gallery-wickets.jpg";
 import staircaseRailingsGalleryImage from "../../public/gallery/gallery-staircase-railings.jpg";
+import customGalleryImage from "../../public/gallery/gallery-custom.jpeg";
 import { paths } from "@/config/paths";
 import { Section } from "@/components/Section/Section";
 
@@ -38,6 +39,14 @@ const items = [
     img: fencesGalleryImage,
     href: paths.ogrodzenia,
     className: styles.fences,
+  },
+  {
+    title: "Na zamówienie",
+    description:
+      "Wykonujemy takze kontrukcje metalowe na specjalne zamówienie, np. stoły i regały.",
+    img: customGalleryImage,
+    href: paths.naZamowienie,
+    className: styles.custom,
   },
 ];
 export const GallerySection = () => {
