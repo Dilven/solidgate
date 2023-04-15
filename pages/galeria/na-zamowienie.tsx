@@ -59,7 +59,7 @@ const Page = () => {
         się do indywidualnych preferencji i wymagań klientów. Nasze wyroby
         metalowe są montowane na terenie Wielunia i okolic, a także na wyjazdach
         w promieniu do 200 km. Zapraszamy do zapoznania się z naszą ofertą i
-        skorzystania z naszych
+        skorzystania z naszych usług.
       </p>
       <Gallery images={images} />
     </Layout>
