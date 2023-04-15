@@ -1,5 +1,3 @@
-import { paths } from "@/config/paths";
-
 export const meta = {
   title: "Solidgate",
   description: `Solidgate to firma zajmująca się wykonywanie ogrodzeń, bram, furtek, balustrad schodowych i innych elementów kutych!`,
@@ -13,6 +11,7 @@ export const pageTitles = {
   balustradySchodowe: "Galeria - Balustrady schodowe",
   bramyIFurtki: "Galeria - Furtki i bramy",
   ogrodzenia: "Galeria - Ogrodzenia",
+  naZamowienie: "Galeria - Na zamówienie",
   galeria: "Galeria",
   kontakt: "Kontakt",
   blog: "Blog - ogrodzenia, bramy i furtki",
@@ -24,6 +23,7 @@ export const shortPageTitle = {
   balustradySchodowe: "Balustrady schodowe",
   bramyIFurtki: "Furtki i bramy",
   ogrodzenia: "Ogrodzenia",
+  naZamowienie: "Na zamówienie",
   galeria: "Galeria",
   kontakt: "Kontakt",
   blog: "Blog",

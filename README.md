@@ -3,7 +3,6 @@
 [Website](https://solidgate.pl/) created for my dad's company by me and my [brother](https://github.com/kamilmateusiak)
 <img width="622" alt="image" src="https://user-images.githubusercontent.com/26671751/206933688-7714d7a6-f1a5-4c90-9da3-37bd108065b1.png">
 
-
 ## Getting Started
 
 First, run the development server:

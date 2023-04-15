@@ -16,10 +16,6 @@ import image15 from "public/gallery/balustrades/15.jpg";
 import image16 from "public/gallery/balustrades/16.jpg";
 import image17 from "public/gallery/balustrades/17.jpg";
 import image18 from "public/gallery/balustrades/18.jpg";
-import image19 from "public/gallery/balustrades/19.jpg";
-import image20 from "public/gallery/balustrades/20.jpg";
-import image21 from "public/gallery/balustrades/21.jpg";
-import image22 from "public/gallery/balustrades/22.jpg";
 import image23 from "public/gallery/balustrades/23.jpg";
 import image24 from "public/gallery/balustrades/24.jpg";
 import image25 from "public/gallery/balustrades/25.jpg";
@@ -70,10 +66,6 @@ export const images = [
   { src: image16, title: "16" },
   { src: image17, title: "17" },
   { src: image18, title: "18" },
-  { src: image19, title: "19" },
-  { src: image20, title: "20" },
-  { src: image21, title: "21" },
-  { src: image22, title: "22" },
   { src: image23, title: "23" },
   { src: image24, title: "24" },
   { src: image25, title: "25" },
